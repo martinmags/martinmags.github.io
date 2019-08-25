@@ -1,0 +1,231 @@
+# Day 3 (Hackathon Day 1)
+# Setup environment and cloned repo to mac mini.
+
+# HELP:
+# IMPLEMENTATION tag are development/coding details
+# DESIGN tag are user experience details
+# Error sub-tags display error description 
+# Solution sub-tags display solutions to previous error tag
+# Package sub-tags display package that needs to be installed.
+
+------------------------------------------------------
+
+IMPLEMENTATION:
+# Error: Missing 'node modules'
+# Solution: run 'npm i' after cloning repo to reinstall dependencies in the project 
+# (Above solution only works if package.json exists in current project directory)
+
+# Error: "Building Javascript bundle" on loop. 
+# Solution: Due to iCloud drive updating every change made.
+# Go to system preferences -> iCloud -> iCloud Drive (Options) -> uncheck Desktops & Documents Folders
+
+# DESIGN:
+# Developed/discussed on a navigation system and app flow.
+# Object-Oriented: Groups contain events and events contain rides(requests and offers) 
+# ---Groups-------
+# ------Events----
+# --------Rides---
+# --------Rides---
+# --------Rides---
+# ------Events----
+# --------Rides---
+# --------Rides---
+# --------Rides---
+# ----------------
+
+
+
+# Day 4 (Hackathon Day 2)
+# Start coding first login screen and profile creation page
+# Continue designing screens/ux
+
+# IMPLEMENTATION:
+# Package: npm install --save react-navigation
+# Installs a package that manages navigation system.
+
+# Entry starts at App.js
+# Create a variable that calls the createStackNavigator. This will package
+# 	the routing of the different screens as a React component.
+# Create a variable that calls the createAppContainer containing the createStackNavigator variable.
+# 	This will package the entire entrypoint of the app with the stackNavigator component.
+
+# Package: npm install --save react-native-elements
+# Installs a package that includes ui components.
+
+# Rule: Create components on a separate file if it's a component 
+# 	that will be used multiple times in a file. 
+
+# Package: npm install --save react-native-snap-carousel
+# Installs a package that enables scrolling horizontally like a slideshow in place.
+
+
+
+
+# Day 5 (2/18/19) 10am-2:45pm
+# It's a nice warm sunny day after a series of rainy days. Time to stay locked inside the basement. Caught Gabriel up to speed with project
+# Setup Digital Ocean account and create droplet.
+# Username: yal318@ucsd.edu
+# Password: venn
+# Droplet password: venndiagram
+# IP: 178.128.177.5
+
+# IMPLEMENTATION:
+# Initial Landing page buttons
+#   Login
+#   Sign-up
+#   Forgot Password (Low Priority)
+#   FB Login API (Low priority) 
+
+# Create Account Page
+#   (Input) Name
+#   (Input) Phone Number
+#   (Input) Email(Optional)
+#   (Button) Submit
+# Inside App.js, root stack, you see "CreateAccount: CreateAccountScreen"
+# That is where the CreateAccountScreen url is extracted from
+# So inside InitialScreen when you click the "Sign-Up" button, it directs you
+# to the CreateAccountScreen. Navigation is done via "this.props.navigation.navigate()"
+
+# Having issue with this.props.navigation.navigate(). 
+# Fixed. There were errors with the file paths.
+
+# Learned to clean up screens by separating component implementation with
+# static display. 
+# Learned to navigate to new page with onclick.
+# Route and Screen management overall improvement
+
+
+
+# Day 6 (2/23/19)
+# Took me 7 tries to parallel park.
+# Yang, Gabriel, Martin, Kimo
+# Daily Goals: Implement the following screens
+#   Create Account Screen
+#   Welcome/Tutorial Screen?
+#   Reset Password Screen
+#   Home Screen
+# Design 
+#   Carousel Information (usage)
+#   Welcome Information (specific usage)
+
+# IMPLEMENTATION:
+# Initial Screen (Increased fidelity)
+#   Removed header
+#   Added animation keyboard when input pressed
+#   TODO: "Package" TextInput and Touchable component as a "form"
+#          that redirects based on if input is registered in database.
+#          If phone number exists, redirect to continuing user workflow ((LOGIN)Home)
+#          Else, redirect to new user workflow (Create account - > Welcome -> Home)
+# Package: npm i react-native-keyboard-aware-scroll-view --save
+# (Might need to uninstall; used animate.view instead to manage this)
+
+
+
+# Day 7 (3/2/19)
+# Light rain, heavy mood
+# Yang, Kimo, Celine, Martin
+# Daily Goal: Redesign Wireframe, Continue working on front end ui skeleton code
+# Vennpool 2.0: https://xd.adobe.com/spec/04931d36-74d4-411d-6e33-45ab2d591740-72a2/
+
+# IMPLEMENTATION:
+# Setted up HomeScreen, started on working on creating an EventCard component.
+# Removed backswipe gesture once at the homescreen with gestureEnabled: false and headerLeft: null.
+
+# Task: create the other screens and link properly. Focus on skeleton code so we can start working on facebook implementation.
+
+
+
+# Day 8 (3/7/19)
+# In Geisel, programming with Michael.
+
+# IMPLEMENTATION:
+# List Views: Two kinds, flatlist and sectionlist
+#   Flatlist displays data as you scrolldown.
+#   Sectionlist is the same, but breaks the data into multiple "sections" with headers for each section (we want this one).
+
+
+
+# Day 9 (3/10/19) 5pm-7pm
+# Super heckin windy outside. 
+# It's a good thing that Geisel is hen toasty. 
+# Yang, Martin
+
+# IMPLEMENTATION:
+#   Yang started working on FB login on react native (not expo).
+#   He researched use of redux.
+#   Martin is almost finished with the eventcard and ridecard component. 
+
+# TODO: 
+#   Martin still needs to separate the eventcard and ridecard into components.
+#   Currently the sectionlist combines both into one component.
+
+
+
+# Day 10 (4/2/19) 11am-3pm
+# Yang, Martin, Gabriel
+# Start working on Redux; caught up with stuff worked on over break
+# Yang has a working implementation of facebook login.
+# We don't need to eject into react native yet, so continue w/ expo
+
+# Yang working on control flow. Gabriel working on FB implementation.
+# Martin working on redux. Using TODO app redux tutorial on youtube
+#   as a start. Once implemented, refactor to work with our app.
+#   Video #3 TODO 5:00
+
+
+
+# Day 11 (4/9/19) 2:11am
+# Yang, Gabriel, and Martin
+# Gabriel likes bittersweet flavors. Favorite Juice: Grapefruit or Cranberry,
+# Created a development plan on team drive.
+
+# IMPLEMENTATION:
+#   Look through the code again in the video and see if there's a part I missed.
+#   Finished video and app has no errors, but app doesn't add input text to todo list.
+#   After taking about how our app handles events, Yang updated database schema.
+#   Facebook Events: 
+#     Going = rsvp: attending
+#     Maybe = rsvp: unsure
+#     Can't Go = (doesn't show up event at all)
+
+
+
+# Day 12 and 13(4/16/19 and 4/18/19)
+# Yang and Martin
+# Connected Yang's progress on backend and Martin's progress on frontend.
+# Gabriel worked on getting familiar with react.js
+
+
+
+# Day 14 (4/23/19)
+# Yang, Martin, and Kimo
+# Updated development plan; Gabriel is officially part of team.
+# Goal: Revisit wirefra me and workon screens. Then look into input validation.
+
+
+
+# Day 15 (5/3/19)
+# Yang, Martin, and Gabriel (on Messenger Voice)
+#
+# Yang working on Backend
+#
+# Martin and Gabriel working on Frontend. 
+# Finished wireframe redesign on figma.
+
+
+
+# Day 16 (5/4/19)
+# Martin and Yang
+# Login Workflow works! CreateAccountScreen and ProfileScreen is good.
+#
+# TODO: 
+#   1. EventCard and RideCard components at HomeScreen
+#   2. OfferRideScreen
+#   3. RideDetailsScreen
+#   4. MyRideScreen
+#  Continue on Tuesday at 2pm-11pm.
+
+Day 17 and 18 (5/11/19 5/12/19)
+# Yang worked on backend
+# Prepared demo and presenation for incubator showcase night
+
