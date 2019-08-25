@@ -1,0 +1,104 @@
+--------------------------------------------------------------------
+TODO Tasks for Portfolio
+--------------------------------------------------------------------
+~ Once we use <script>, make sure to do a <noscript>
+<noscript>
+  <meta http-equiv="Refresh" content="0; URL=noscripterror.html">
+</noscript>
+
+~ Lazy-loading of all images w/ progressive enhancement
+
+~ CODE:
+  ~ Create content for developer notes on VennPool
+  ~ Link "View Developer Notes" to new page
+~ DESIGN:
+  ~ Link "View Blog Entries" from Medium Blog
+  ~ Write content then link "View Case Study" from Deuce
+  ~ Write content then link "View Case Study" from VennPool
+  ~ Write content then link "View Collection" from UX Flow Collection
+
+~ Add responsive breakpoints
+
+
+
+
+--------------------------------------------------------------------
+Wow, I'm Learning
+--------------------------------------------------------------------
+~ Serve Photo assets through a Content Delivery Network like:
+  AWS S3
+  Google's Firebase Storage
+  Cloudinary
+
+~ Once scripts have been created, bundle scripts into 1 js file
+since js files share the same namespace anyway. It alleviates 
+load issues and decoupled js files serve no purpose except for 
+better readability for the programmer, but we can just bundle the
+scripts on delivery. Bundling overall improves page rendering times
+when linking scripts.
+
+~ Progressive enhancement code with <script src module async>
+  ~ Look into Lazy-loading for images 
+  ~ Adaptive Design
+    ~ Take a look at sizes attribute: 
+    if max-width:600px (mobile) then display 100vw, else run 60vw.
+    <img src="lake_400.jpg" 
+      sizes="(max-width: 600px) 100vw, 60vw"
+      srcset="lake_500.jpg 400w,
+              lake_600.jpg 600w,
+              lake_800.jpg 800w" 
+      alt="Lake Louise, Canada">
+   ~ Even further...if we want to support different sources, need to do
+   one for each types: JPEG-XR (good for IE), webp (good for chrome)
+   Ex: Code below supports 3 types of the same image with 3 different dimensions.
+  <picture>
+    <source type="image/webp"
+      sizes="(max-width: 600px) 100vw, 60vw"
+      srcset="lake_500.jpg 400w,
+              lake_600.jpg 600w,
+              lake_800.jpg 800w">
+    <source type="image/vnd.ms-photo"
+      sizes="(max-width: 600px) 100vw, 60vw"
+      srcset="lake_500.jpg 400w,
+              lake_600.jpg 600w,
+              lake_800.jpg 800w">
+    <img src="lake_400.jpg" 
+      sizes="(max-width: 600px) 100vw, 60vw"
+      srcset="lake_500.jpg 400w,
+              lake_600.jpg 600w,
+              lake_800.jpg 800w" 
+      alt="Lake Louise, Canada">
+  </picture>
+
+  ~ NOW using a cdn to simplify and improve subsequent loads
+  <img src="https://image.cdn/w_400/your.server/lake.jpg"
+    sizes="(max-width: 600px) 100vw, 60vw"
+    srcset="https://image.cdn/w_400/your.server/lake.jpg 400w,
+            https://image.cdn/w_600/your.server/lake.jpg 600w,
+            https://image.cdn/w_800/your.server/lake.jpg 800w"
+    alt="Lake Louise, Canada">
+    ~ Then CDN and multiple sources
+    <picture>
+      <source type="image/webp"
+        sizes="(max-width: 600px) 100vw, 60vw"
+        srcset="https://image.cdn/w_400,f_webp/your.server/lake.jpg 400w,
+                https://image.cdn/w_600,f_webp/your.server/lake.jpg 600w,
+                https://image.cdn/w_800,f_webp/your.server/lake.jpg 800w">
+      <source type="image/vnd.ms-photo"
+        sizes="(max-width: 600px) 100vw, 60vw"
+        srcset="https://image.cdn/w_400,f_wdp/your.server/lake.jpg 400w,
+                https://image.cdn/w_600,f_wdp/your.server/lake.jpg 600w,
+                https://image.cdn/w_800,f_wdp/your.server/lake.jpg 800w"">
+      <img src="https://image.cdn/w_400,f_jpg/your.server/lake.jpg" 
+        sizes="(max-width: 600px) 100vw, 60vw"
+        srcset="https://image.cdn/w_400,f_jpg/your.server/lake.jpg 400w,
+                https://image.cdn/w_600,f_jpg/your.server/lake.jpg 600w,
+                https://image.cdn/w_800,f_jpg/your.server/lake.jpg 800w" 
+        alt="Lake Louise, Canada">
+    </picture>
+
+    or just do f_auto, since the CDN handles the optimal image to serve
+    https://image.cdn/w_400,f_auto/your.server/lake.f_jpg
+
+    http://res.cloudinary.com/username/image/fetch/w_450/https://images.unsplash.com/photo-12314512315213=5621412321313
+    ^ (resizes to 450px wide)
