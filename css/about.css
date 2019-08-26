@@ -207,7 +207,8 @@ body{
   }
   #self-portrait{
     height: auto;
-    width: 300px;
+    width: 250px;
+    margin-top: 60px;
   }
   /* End of Navigation Bar */
 
@@ -219,4 +220,6 @@ body{
     font-weight: 300;
     color: white;
   }
+
+  #nav-separator1{ display: none;}
 }
