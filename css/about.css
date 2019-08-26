@@ -129,7 +129,9 @@ body{
     justify-content: flex-start;
     height: 100vh;
     flex-direction: column;
+    background: beige;
   }
+
   #aboutme{ 
     width: 65vw; 
     margin-left: 0;
@@ -201,7 +203,7 @@ body{
     position: relative;
   }
   #title{
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 2em;
     text-align: center;
   }
