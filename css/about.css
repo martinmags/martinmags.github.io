@@ -129,7 +129,11 @@ body{
     height: 100vh;
     flex-direction: column;
   }
-  #aboutme{ width: 80vw; }
+  #aboutme{ 
+    width: 65vw; 
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
   /* Navigation Bar */
   #header{ display: none;}
 
@@ -195,11 +199,6 @@ body{
     width: 100vw;
     position: relative;
   }
-  
-  #aboutme{
-    margin-left: 0;
-    margin-bottom: 30px;
-  }
   #title{
     padding: 10px;
     font-size: 2em;
@@ -207,7 +206,7 @@ body{
   }
   #self-portrait{
     height: auto;
-    width: 250px;
+    width: 200px;
     margin-top: 60px;
   }
   /* End of Navigation Bar */
