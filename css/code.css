@@ -75,17 +75,15 @@ body{
   justify-content: flex-start;
   align-items: center;
   color: #494747;
-  overflow-y: scroll;
-  overflow-x: hidden;
+ 
 }
 .work{
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 40vh;
+  /* height: 40vh; */
   justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin: 10vh 0;
 }
 .text{
   display: flex;
@@ -206,24 +204,23 @@ body{
   /* End of Navigation Bar */
 
   .work{
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    width: 65vw;
   }
 
-  .text{
-    width: 80vw;
-  }
-  
+  .text{ width: inherit;}
   .app-img{
     display:none;
   }
 
   #foot{
     position: absolute;
-    bottom: 0%;
-    margin: 5px;
+    bottom: 10%;
+    padding: 5vh 5vw;
     font-size: .7em;
     font-weight: 300;
     color: white;
   }
+
+  #nav-separator1{ display: none;}
 }

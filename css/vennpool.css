@@ -74,8 +74,6 @@ body{
   justify-content: flex-start;
   align-items: center;
   color: #494747;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 .work{
   display: flex;
@@ -167,6 +165,7 @@ body{
 }
 #overview-header{
   display: flex;
+  flex-direction: column;
   color: #3098E7;
   font-weight: bold;
   font-size: 2em;
@@ -252,24 +251,22 @@ body{
   /* End of Navigation Bar */
 
   #role-skills-duration-container{
-    display: flex;
     flex-direction: column;
-    height: 80vh;
+    justify-content: space-evenly;
+    height: 40vh;
     width: 100vw;
   }
   
   .top-card{
-    height: 15vh;
-    width: 100vw;
+    height: auto;
+    width: inherit;
   }
 
-  #content{ height: 100vh; }
-  #overview{ width: 80vw; }
-
-  #blank-header{
-    height: 15vh;
-    width: 100vw;
+  #content{ 
+    display: block; 
+    height: 100vh; 
   }
+  #overview{ width: 65vw; }
 
   .sub-topic, .sub-topic-single{
     flex-direction: column;
@@ -283,11 +280,12 @@ body{
 
   #foot{
     position: absolute;
-    bottom: 0%;
-    margin: 5px;
+    bottom: 10%;
+    padding: 5vh 5vw;
     font-size: .7em;
     font-weight: 300;
     color: white;
   }
 
+  #nav-separator1{ display: none;}
 }

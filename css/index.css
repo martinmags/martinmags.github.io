@@ -118,6 +118,7 @@ body{
     justify-content: flex-start;
     height: 100vh;
     flex-direction: column;
+    /* overflow: scroll; */
   }
   #aboutme{ width: 80vw; }
   /* Navigation Bar */
@@ -169,7 +170,7 @@ body{
     color: white;
     text-decoration: none;
     line-height: 4em;
-    padding: 10px 20px;
+    /* padding: 1vh 5vw; */
   }
 
   .mobile-navbarBtn span{
@@ -179,39 +180,41 @@ body{
     background: gray;
     margin: 1vh 0;
   }
-
+/* 
   #blank-header{
     height: 15vh;
     width: 100vw;
-  }
+  } */
   /* End of Navigation Bar */
 
   #intro_container{
     flex-direction: column;
     align-items: center;
-    width: 80vw;
+    width: 65vw;
+    justify-content: space-evenly;
+    height: 100vh;
   }
 
-  #welcome{
-    font-size: 2.5em;
-  }
+  #welcome{ font-size: 2.5em; }
 
   #me{
     margin-left: 0;
-    height: 200px;
-    width: 200px;
+    height: 40vh;
+    width: auto;
   }
 
   #description_container{
-    height: 40vh;
+    height: 20vh;
   }
 
   #foot{
     position: absolute;
-    bottom: 0%;
-    margin: 5px;
+    bottom: 10%;
+    padding: 5vh 5vw;
     font-size: .7em;
     font-weight: 300;
     color: white;
   }
+
+  #nav-separator1{ display: none; }
 }

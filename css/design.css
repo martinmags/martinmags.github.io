@@ -222,8 +222,8 @@ body{
 
   #foot{
     position: absolute;
-    bottom: 0%;
-    margin: 5px;
+    bottom: 10%;
+    padding: 5vh 5vw;
     font-size: .7em;
     font-weight: 300;
     color: white;
