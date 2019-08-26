@@ -84,6 +84,7 @@ body{
   flex-direction: column;
   justify-content: center;
   width: 40vw;
+  height: 150vh;
   line-height: 150%;
   margin-left: 15px;
 }
