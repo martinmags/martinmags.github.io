@@ -8,11 +8,39 @@
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/design.css">
+  <script src="/js/mobile-nav.js"></script>
   <title>Martin Magsombol - Design</title>
 </head>
 <body id="page">
-  <!-- Navigation Bar -->
-  <div id="spacer"></div>
+  <!-- Navigation Bar (mobile)-->
+  <div id="mobile-navbar">
+    <div id="mobile-header">
+      <a id="logo_container" href="/index.html">
+        <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
+      </a>    
+    </div>
+    <div class="mobile-navbarBtn" onclick="toggleNB()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="/html/code.html">CODE</a></li>
+      <li><a href="/html/design.html" class="emphasis">DESIGN</a></li>
+      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
+      <li><a href="/html/about.html">ABOUT</a></li>
+      <li><a href="#">VIEW MY RESUME</a></li>  
+    </ul>
+    <footer id="foot">
+      <p>This website was written from scratch by me.</p>
+      <p>Copyright &copy; Martin Mags</p>
+    </footer>
+  </div>
+  
+  <!-- spacer for mobile -->
+  <div id="blank-header"></div>
+  
+  <!-- Navigation Bar (desktop)-->
   <div id="header">
     <a id="logo_container" href="/index.html">
       <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
@@ -20,14 +48,14 @@
     <div id="nav_container">
       <a href="/html/code.html">CODE</a>
       <a href="/html/design.html" class="emphasis">DESIGN</a>
-      <a href="/html//photography/portraits.html">PHOTOGRAPHY</a>
+      <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
       <a href="/html/about.html">ABOUT</a>
     </div>
     <div id="resume_container">
       <a href="#">View my<br>Resume</a>
     </div>
   </div>
-  <hr id="separator">
+  <hr id="nav-separator1" class="separator">
   <!-- End of Navigation Bar -->
 
   <div id="content">
@@ -41,7 +69,25 @@
           <a href="" target="_blank">View Blog Entries</a>
         </button>
       </div>
-      <div class="img"></div>
+      <div class="demo-img"></div>
+    </div>
+
+    <!-- VennPool -->
+    <div class="work">
+      <div class="text">
+        <p class="role">UX Designer</p>
+        <p class="app">VennPool</p><br>
+        <p>Iterated through designs and feedback to establish the navigation 
+          and overall user experience of a carpool management app as a part of
+          the startup incubator, The Basement.
+        </p><br>
+        <button class="btn">
+          <a href="/html/design/vennpool-design.html">View Case Study</a>
+        </button>
+      </div>
+      <video class="demo-img" autoplay loop>
+        <source src="/media/vennpool-demo.MP4">
+      </video>
     </div>
 
     <!-- Deuce -->
@@ -54,20 +100,7 @@
           <a href="/html/design/deuce-design.html">View Case Study</a>
         </button>
       </div>
-      <div class="img"></div>
-    </div>
-
-    <!-- VennPool -->
-    <div class="work">
-      <div class="text">
-        <p class="role">UX Designer</p>
-        <p class="app">VennPool</p><br>
-        <p>Description here</p><br>
-        <button class="btn">
-          <a href="/html/design/vennpool-design.html">View Case Study</a>
-        </button>
-      </div>
-      <div class="img"></div>
+      <div class="demo-img"></div>
     </div>
 
     <!-- UX Flow Prototype -->

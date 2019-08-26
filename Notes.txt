@@ -6,21 +6,16 @@ TODO Tasks for Portfolio
   <meta http-equiv="Refresh" content="0; URL=noscripterror.html">
 </noscript>
 
-~ Lazy-loading of all images w/ progressive enhancement
-
-~ CODE:
-  ~ Create content for developer notes on VennPool
-  ~ Link "View Developer Notes" to new page
 ~ DESIGN:
   ~ Link "View Blog Entries" from Medium Blog
   ~ Write content then link "View Case Study" from Deuce
-  ~ Write content then link "View Case Study" from VennPool
-  ~ Write content then link "View Collection" from UX Flow Collection
+  ~ Write content then link "View Collection" from UX Flow Collection ( low priority )
+  ~ Write content about the creation of this portfolio site ( low priority )
 
-~ Add responsive breakpoints
-
-
-
+~ PHOTOGRAPHY:
+  ~ Do back-up loading just in case( low priority )
+  ~ Curate and upload some images to Events
+  ~ Curate and upload some images to Travel
 
 --------------------------------------------------------------------
 Wow, I'm Learning

@@ -8,18 +8,46 @@
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/vennpool.css">
+  <script src="/js/mobile-nav.js"></script>
   <title>Martin Magsombol - Code</title>
 </head>
 <body id="page">
-  <!-- Navigation Bar -->
-  <div id="spacer"></div>
+  <!-- Navigation Bar (mobile)-->
+  <div id="mobile-navbar">
+    <div id="mobile-header">
+      <a id="logo_container" href="/index.html">
+        <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
+      </a>    
+    </div>
+    <div class="mobile-navbarBtn" onclick="toggleNB()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="/html/code.html">CODE</a></li>
+      <li><a href="/html/design.html" class="emphasis">DESIGN</a></li>
+      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
+      <li><a href="/html/about.html">ABOUT</a></li>
+      <li><a href="#">VIEW MY RESUME</a></li>  
+    </ul>
+    <footer id="foot">
+      <p>This website was written from scratch by me.</p>
+      <p>Copyright &copy; Martin Mags</p>
+    </footer>
+  </div>
+  
+  <!-- spacer for mobile -->
+  <div id="blank-header"></div>
+
+  <!-- Navigation Bar (desktop)-->
   <div id="header">
     <a id="logo_container" href="/index.html">
       <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
     </a>
     <div id="nav_container">
-      <a href="/html/code.html" class="emphasis">CODE</a>
-      <a href="/html/design.html">DESIGN</a>
+      <a href="/html/code.html">CODE</a>
+      <a href="/html/design.html" class="emphasis">DESIGN</a>
       <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
       <a href="/html/about.html">ABOUT</a>
     </div>
@@ -27,7 +55,7 @@
       <a href="#">View my<br>Resume</a>
     </div>
   </div>
-  <hr id="separator">
+  <hr id="nav-separator1" class="separator">
   <!-- End of Navigation Bar -->
 
   <div id="content">
@@ -41,7 +69,7 @@
       <span class="emphasis">Skills:</span><br>React Native, Redux
     </p>
     <p class="top-card">
-      <span class="emphasis">Duration:</span><br>Nov 2018 - May 2019 (7 mos)
+      <span class="emphasis">Duration:</span><br>7 months
     </p>
     </div>
  
@@ -56,12 +84,12 @@
         Even though we focused on deploying our mvp on ios, we used React Native as a framework to allow for future 
         scalability to android os. It was my first time working with React Native, so I decided to create a Development
         journal to keep track of issues and solutions for reference.
-      </p><br>
+      </p><br><br>
       <button class="btn">
         <a href="/html/design/vennpool-design.html">View Design Process</a>
-      </button><br>
+      </button><br><br>
       <!-- Developer Notes -->
-      <iframe src="/html/code/vennpool-journal.txt" id="developer-notes"></iframe><br>
+      <iframe src="/documents/vennpool-journal.txt" id="developer-notes"></iframe><br>
 
 
     </div>

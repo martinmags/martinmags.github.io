@@ -8,18 +8,46 @@
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/vennpool-design.css">
+  <script src="/js/mobile-nav.js"></script>
   <title>Martin Magsombol - Code</title>
 </head>
 <body id="page">
-  <!-- Navigation Bar -->
-  <div id="spacer"></div>
+  <!-- Navigation Bar (mobile)-->
+  <div id="mobile-navbar">
+    <div id="mobile-header">
+      <a id="logo_container" href="/index.html">
+        <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
+      </a>    
+    </div>
+    <div class="mobile-navbarBtn" onclick="toggleNB()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="/html/code.html">CODE</a></li>
+      <li><a href="/html/design.html" class="emphasis">DESIGN</a></li>
+      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
+      <li><a href="/html/about.html">ABOUT</a></li>
+      <li><a href="#">VIEW MY RESUME</a></li>  
+    </ul>
+    <footer id="foot">
+      <p>This website was written from scratch by me.</p>
+      <p>Copyright &copy; Martin Mags</p>
+    </footer>
+  </div>
+  
+  <!-- spacer for mobile -->
+  <div id="blank-header"></div>
+
+  <!-- Navigation Bar (desktop)-->
   <div id="header">
     <a id="logo_container" href="/index.html">
       <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
     </a>
     <div id="nav_container">
-      <a href="/html/code.html" class="emphasis">CODE</a>
-      <a href="/html/design.html">DESIGN</a>
+      <a href="/html/code.html">CODE</a>
+      <a href="/html/design.html" class="emphasis">DESIGN</a>
       <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
       <a href="/html/about.html">ABOUT</a>
     </div>
@@ -27,7 +55,7 @@
       <a href="#">View my<br>Resume</a>
     </div>
   </div>
-  <hr id="separator">
+  <hr id="nav-separator1" class="separator">
   <!-- End of Navigation Bar -->
 
   <div id="content">
@@ -44,37 +72,141 @@
     </p>
     </div>
  
-    <hr id="separator">
-    <!-- Overview-->
-    <h1 id="overview-header">VennPool</h1>
+    <hr class="separator"><br><br>
+
+    <h1 id="content-header">VennPool</h1><br><br>
 
     <!-- Overview-->
     <p id="overview">
       VennPool is a mobile app that aims the alleviate messy communication associated with organizing large carpools.
       We worked with mentors and investors as a part of the startup incubator, The Basement.
-    </p><br>
+    </p><br><br>
     
     <!-- link to coding development-->
     <button class="btn">
       <a href="/html/code/vennpool.html">View Coding Development</a>
-    </button>
+    </button><br>
+
+    <hr class="separator"><br>
 
     <!-- Research -->
+    <!-- text-->
+    <div class="sub-topic">
+      <div class="sub-topic-text">
+        <h1 class="secondary-header">RESEARCH</h1>
+        <p>
+          The following <span class="emphasis">user pain points</span>
+          served as a reference for the design. This particular case study
+          was done on the project manager's outback adventures group.
+        </p><br>
+        <ul class="list">
+          <li>Too many steps for the one organizing the carpools</li>
+          <li>Who has a car, who needs a ride</li>
+          <li>Long lists of messages</li>
+          <li>Extra manual messages when someone suddenly can't make it anymore</li>
+        </ul>
 
-    <!-- Analysis -->
+      </div>
+      <!-- image/videos-->
+      <video class="demos" controls autoplay loop>
+        <source src="/media/user-painpoint.MP4">
+      </video>
+    </div>
+    
+    <hr class="separator">
+    <!-- Initial Design -->
+    <div class="sub-topic-single">
+      <div class="sub-topic-text">
+        <h1 class="secondary-header">INITIAL DESIGN</h1>
+        <p>
+          Our initial design was very "engineered." We came up with an 
+          object-oriented design that organized the user-flow into groups,
+          events, and rides. A user would be a part of a group and within 
+          that group the user can have any number of events. Each event would
+          contain all the possible rides people within the group can join or 
+          offer a ride. This object-oriented style was stemmed off the idea
+          of trying to integrate a user account control system, so random users
+          can't just join group-restricted rides.<br>
+          <ul class="list">
+            <li>Groups</li>
+            <ul class="list">
+              <li>Events</li>
+              <ul class="list">
+                <li>Rides</li>
+                <li>Rides</li>
+                <li>Rides</li>
+              </ul>
+              <li>Events</li>
+              <ul class="list">
+                <li>Rides</li>
+                <li>Rides</li>
+                <li>Rides</li>
+              </ul>
+            </ul>
+          </ul>
+        </p>
+      </div>
+      <div class="sub-topic-supplemental">
+        <button class="btn">
+            <a href="/documents/vennpool-usecases.pdf" target="_blank">View Use Cases</a>
+        </button><br>
+        <button class="btn">
+            <a href="/documents/vennpool-userstories.pdf" target="_blank">View User Stories</a>
+        </button><br>
+      </div>
+    </div>
 
-    <!-- First Design Iteration -->
+    <hr class="separator">
 
     <!-- Feedback -->
-    
+    <div class="sub-topic-single">
+      <h1 class="secondary-header">FEEDBACK</h1>
+      <p>
+        After some <span class="emphasis">User Testing</span> and 
+        <span class="emphasis">Design Critiques</span>, we discovered 
+        that our initial design involved <span class="emphasis">too many steps</span> 
+        and was <span class="emphasis">too confined</span> within its object-oriented 
+        model. The <span class="emphasis">complexity</span> may push away new users. 
+        Users suggested to <span class="emphasis">avoid or minimize account creation</span>.
+      </p><br>
+    </div>
+
+    <hr class="separator">
+
     <!-- Redesign -->
-    
-    <!-- Feedback -->
-
-    <!-- Conclusion-->
-
-    
+    <div class="sub-topic">
+      <div class="sub-topic-text">
+        <h1 class="secondary-header">REDESIGN</h1>
+        <p>As the incubator showcase night approached, we decided to focus our 
+          efforts into implementing the our first design's feedback and developing
+          the minimum viable product. Due to the too many steps for creating an account, 
+          we removed our account creation and replaced it with a Facebook login api.
+          Once a user logs in or creates an account through Facebook login, their Events
+          are parsed into their feed, and from there they can see and offer rides.
+          Logging in with Facebook solves a lot of the problems mentioned from our feedback phase.
+          <ul class="list">
+            <li>Less steps to sign-in and create an account.</li>
+            <li>Trust issue with a new app. A user is less likely to provide information
+            to an app that is new to the market.</li>
+            <li>User Account Control is internally managed by Facebook's group/event system.
+            </li>
+          </ul>
+        </p>
+      </div>
+        <video class="demos" controls autoplay loop>
+          <source src="/media/vennpool-demo.MP4">
+        </video>
+    </div><br>
+    <!-- prototype images -->
+    <div id="demo-images">
+      <img class="demos" src="/media/VennPool v.3.0/InitialScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/CreateAccountScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/HomeScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/ProfileScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/MyRidesScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/OfferRideScreen.png">
+      <img class="demos" src="/media/VennPool v.3.0/RideDetailsScreen.png">
+    </div>
   </div>
-  
 </body>
 </html>

@@ -8,11 +8,39 @@
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/about.css">
+  <script src="/js/mobile-nav.js"></script>
   <title>Martin Magsombol - Design</title>
 </head>
 <body id="page">
-  <!-- Navigation Bar -->
-  <div id="spacer"></div>
+  <!-- Navigation Bar (mobile)-->
+  <div id="mobile-navbar">
+    <div id="mobile-header">
+      <a id="logo_container" href="/index.html">
+        <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
+      </a>    
+    </div>
+    <div class="mobile-navbarBtn" onclick="toggleNB()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="/html/code.html">CODE</a></li>
+      <li><a href="/html/design.html">DESIGN</a></li>
+      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
+      <li><a href="/html/about.html" class="emphasis">ABOUT</a></li>
+      <li><a href="#">VIEW MY RESUME</a></li>  
+    </ul>
+    <footer id="foot">
+      <p>This website was written from scratch by me.</p>
+      <p>Copyright &copy; Martin Mags</p>
+    </footer>
+  </div>
+  
+  <!-- spacer for mobile -->
+  <div id="blank-header"></div>
+  
+  <!-- Navigation Bar (desktop)-->
   <div id="header">
     <a id="logo_container" href="/index.html">
       <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
@@ -27,45 +55,42 @@
       <a href="#">View my<br>Resume</a>
     </div>
   </div>
-  <hr id="separator">
+  <hr id="nav-separator1" class="separator">
   <!-- End of Navigation Bar -->
 
   <div id="content">
-    <div id="inner_content">
-      <img id="img" src="/media/me2.JPG" alt="Martin Magsombol" title="Martin Magsombol">
-      <div id="aboutme">
-        <p id="title">Here's a little bit more about me.</p><br>
-        <p>
-          I'm an undergraduate from University of California, San Diego with a
-          major in <span class="emphasis">Computer Science</span> and minor in <span class="emphasis">Design</span>.<br><br>
+    <img id="self-portrait" src="/media/me2.JPG" alt="Martin Magsombol" title="Martin Magsombol">
+    <div id="aboutme">
+      <p id="title">Here's a little bit more about me.</p><br>
+      <p>
+        I'm an undergraduate from University of California, San Diego with a
+        major in <span class="emphasis">Computer Science</span> and minor in <span class="emphasis">Design</span>.<br><br>
 
-          As a designer, I love to discover <span class="emphasis">different perspectives</span> and look into
-          the purpose and intent behind a design. As a developer, I believe
-          technology is incomplete without examining the constantly changing
-          <span class="emphasis">human-computer interaction</span>. As a photographer, I shoot portraitures
-          to <span class="emphasis">understand others</span> a little bit more. Even though we spend time to 
-          get to know a person, I don't think we can truly 100% understand a person,
-          even the closest of family and friends. It can be scary, but I find it
-          intriguing and worth exploring.
-        </p><br>
-        <p>
-          <span id="connect">Let's Connect!</span> Contact me at <span class="emphasis">martinremags@gmail.com</span><br>
-          if you have any opportunities or simply want to chat.
-        </p>
-        <div id="media">
-            <a class="media_container" href="">
-              <img class="media_icon" src="/media/gitIcon.png" alt="">
-            </a> 
-            <a class="media_container" href="">
-              <img class="media_icon" src="/media/linkedinIcon.png" alt="">
-            </a>
-            <a class="media_container" href="">
-              <img class="media_icon" src="/media/igIcon.png" alt="">
-            </a>
-        </div>
+        As a designer, I love to discover <span class="emphasis">different perspectives</span> and look into
+        the purpose and intent behind a design. As a developer, I believe
+        technology is incomplete without examining the constantly changing
+        <span class="emphasis">human-computer interaction</span>. As a photographer, I shoot portraitures
+        to <span class="emphasis">understand others</span> a little bit more. Even though we spend time to 
+        get to know a person, I don't think we can truly 100% understand a person,
+        even the closest of family and friends. It can be scary, but I find it
+        intriguing and worth exploring.
+      </p><br>
+      <p>
+        <span id="connect">Let's Connect!</span> Contact me at <span class="emphasis">martinremags@gmail.com</span><br>
+        if you have any opportunities or simply want to chat.
+      </p>
+      <div id="media">
+          <a class="media_container" href="">
+            <img class="media_icon" src="/media/gitIcon.png" alt="">
+          </a> 
+          <a class="media_container" href="">
+            <img class="media_icon" src="/media/linkedinIcon.png" alt="">
+          </a>
+          <a class="media_container" href="">
+            <img class="media_icon" src="/media/igIcon.png" alt="">
+          </a>
       </div>
     </div>
   </div>
-  
 </body>
 </html>

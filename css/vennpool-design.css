@@ -12,6 +12,7 @@ body{
 }
 
 /* Navigation Bar */
+#mobile-navbar{ display: none;}
 #spacer{ 
   height:2vh;
 }
@@ -58,9 +59,9 @@ body{
   text-align: center;
   font-size: 1.3em;
 }
-#separator{
+.separator{
   width: 55vw;
-  border: solid 1px black;
+  border: solid .5px black;
 }/* End of Navigation Bar */
 
 /* 100-12 = 88vh */
@@ -108,8 +109,8 @@ body{
   background-color: white;
   border-radius: 5px;
   border: black solid 1px;
-  height:50px;
   width: 175px;
+  padding: 10px 0;
 }
 
 .img{
@@ -125,7 +126,7 @@ body{
   letter-spacing: .1em;
 }
 
-.emphasis{
+.emphasis, #early-artifacts{
   color: #3098E7 !important;
   font-weight: bold;
 }
@@ -134,16 +135,18 @@ body{
 #role-skills-duration-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   height: 10vh;
-  width: 100vw;
-  align-items: center;
+  width: 55vw;
 }
 
 .top-card{
-  height: 5vh;
-  width: 20vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  justify-content: center;
 }
 
 #vennpool-header{
@@ -161,15 +164,26 @@ body{
   font-style: italic;
 
 }
-#overview-header{
+#content-header{
   display: flex;
   color: #3098E7;
   font-weight: bold;
+  font-size: 2em;
+  height: 10vh;
+  align-items: center;
+}
+.secondary-header{
+  display: flex;
+  color: #3098E7;
   font-size: 1.5em;
   height: 10vh;
   align-items: center;
 }
-#overview{ width: 55vw; }
+
+#overview{ 
+  width: 45vw; 
+  line-height: 150%;
+}
 
 #developer-notes{
   width: 40vw;
@@ -187,3 +201,150 @@ body{
 #app-graphic{
   width: 55vw;
 }
+
+.demos{
+  height: 400px;
+  margin: 10px;
+}
+
+.sub-topic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw;
+}
+
+.sub-topic-text{
+  width: 55vw;
+  line-height: 150%;
+}
+
+.sub-topic-supplemental{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.sub-topic-single{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 55vw;
+  line-height: 150%;
+}
+
+#demo-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 55vw;
+}
+
+.list{ list-style-type: square}
+
+/* Media Queries @max-width: 960*/
+/* Navigation Bar */
+@media screen and (max-width: 960px){
+  #header{ display: none; }
+
+  #mobile-navbar{
+    display: block;
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    left:-100vw;
+    background: rgb(41, 41, 41);
+    left: -75vw;
+    transition: all 250ms linear;
+  }
+  
+  #mobile-navbar.active{ left: 0px};
+
+  #navbar ul{ padding: 30px 0; }
+  
+  .mobile-navbarBtn{
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    color: black;
+  }
+
+  #mobile-navbar a:link, 
+  #mobile-navbar a:visited, 
+  #mobile-navbar a:link:hover, 
+  #mobile-navbar a:hover, 
+  #mobile-navbar a:visited:hover{
+    color: white;
+    text-decoration: none;
+    line-height: 4em;
+    padding: 10px 20px;
+  }
+
+  .mobile-navbarBtn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: gray;
+    margin: 1vh 0px;
+  }
+
+  #mobile-header{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.5em;
+    margin: 1vh 75vw;
+    text-align: center;
+  }
+
+  #logo{ height: 75px; width: 75px;}  
+  /* End of Navigation Bar */
+
+  #role-skills-duration-container{
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+  }
+  
+  .top-card{
+    height: 15vh;
+    width: 100vw;
+  }
+
+  #content{ height: 100vh; }
+  #overview{ width: 80vw; }
+
+  #blank-header{
+    height: 15vh;
+    width: 100vw;
+  }
+
+  #nav-separator1{ display: none; }
+
+  .sub-topic, .sub-topic-single{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+  }
+  .sub-topic-text{ width: inherit; }
+  .sub-topic-supplemental{ width: 80vw; }
+  .secondary-header{ justify-content: center; }
+
+  #foot{
+    position: absolute;
+    bottom: 0%;
+    margin: 5px;
+    font-size: .7em;
+    font-weight: 300;
+    color: white;
+  }
+}
+

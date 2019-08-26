@@ -12,6 +12,8 @@ body{
 }
 
 /* Navigation Bar */
+#mobile-navbar{ display: none;}
+
 #spacer{ 
   height:2vh;
 }
@@ -58,9 +60,10 @@ body{
   text-align: center;
   font-size: 1.3em;
 }
-#separator{
+
+.separator{
   width: 55vw;
-  border: solid 1px black;
+  border: solid .5px black;
 }/* End of Navigation Bar */
 
 /* 100-12 = 88vh */
@@ -112,11 +115,9 @@ body{
   width: 175px;
 }
 
-.img{
+.app-img{
   height: 250px;
   width: 250px;
-  background-color: blue;
-  border-radius: 100%;
   margin-left: 15px;
 }
 
@@ -128,4 +129,103 @@ body{
 .emphasis{
   color: #3098E7 !important;
   font-weight: bold;
+}
+
+/* Media Queries @max-width: 960*/
+@media screen and (max-width: 960px){
+  #content{ 
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+  }
+  #aboutme{ width: 80vw; }
+  /* Navigation Bar */
+  #header{ display: none;}
+
+  #mobile-navbar{
+    display: block;
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    left:-100vw;
+    background: rgb(41, 41, 41);
+    left: -75vw;
+    transition: all 250ms linear;
+  }
+
+  #mobile-header{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.5em;
+    margin: 1vh 75vw;
+    text-align: center;
+  }
+  
+  #mobile-navbar.active{ left: 0px; }
+  #logo{ 
+    height: 75px; 
+    width: 75px;
+  }  
+
+  #navbar ul{ padding: 30px 0; }
+  
+  .mobile-navbarBtn{
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    color: black;
+  }
+
+  #mobile-navbar a:link, 
+  #mobile-navbar a:visited, 
+  #mobile-navbar a:link:hover, 
+  #mobile-navbar a:hover, 
+  #mobile-navbar a:visited:hover{
+    color: white;
+    text-decoration: none;
+    line-height: 4em;
+    padding: 10px 20px;
+  }
+
+  .mobile-navbarBtn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: gray;
+    margin: 1vh 0;
+  }
+
+  #blank-header{
+    height: 15vh;
+    width: 100vw;
+  }
+  /* End of Navigation Bar */
+
+  .work{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text{
+    width: 80vw;
+  }
+
+  #nav-separator1{ display: none; }
+
+  .app-img{
+    display:none;
+  }
+
+  #foot{
+    position: absolute;
+    bottom: 0%;
+    margin: 5px;
+    font-size: .7em;
+    font-weight: 300;
+    color: white;
+  }
 }

@@ -12,6 +12,8 @@ body{
 }
 
 /* Navigation Bar */
+#mobile-navbar, #photo_nav_mobile{ display: none;}
+
 #spacer{ 
   height:2vh;
 }
@@ -58,9 +60,9 @@ body{
   text-align: center;
   font-size: 1.3em;
 }
-#separator{
+.separator{
   width: 55vw;
-  border: solid 1px black;
+  border: solid .5px black;
 }
 /* End of Navigation Bar */
 
@@ -121,3 +123,118 @@ body{
 }
 
 .spacer{ line-height: 10vh; }
+
+ul{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Media Queries @max-width: 960*/
+@media screen and (max-width: 960px){
+  #photo_nav{ display: none; }
+
+  #content{ 
+    justify-content: flex-start;
+    height: 75vh;
+    flex-direction: column;
+  }
+  #aboutme{ width: 80vw; }
+  /* Navigation Bar */
+  #header{ display: none;}
+
+  #mobile-navbar{
+    display: block;
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    left:-100vw;
+    background: rgb(41, 41, 41);
+    left: -75vw;
+    transition: all 250ms linear;
+  }
+
+  #mobile-header{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.5em;
+    margin: 1vh 75vw;
+    text-align: center;
+  }
+  
+  #mobile-navbar.active{ left: 0px; }
+  #logo{ 
+    height: 75px; 
+    width: 75px;
+  }  
+
+  #navbar ul{ padding: 30px 0; }
+  
+  .mobile-navbarBtn{
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    color: black;
+  }
+
+  #mobile-navbar a:link, 
+  #mobile-navbar a:visited, 
+  #mobile-navbar a:link:hover, 
+  #mobile-navbar a:hover, 
+  #mobile-navbar a:visited:hover{
+    color: white;
+    text-decoration: none;
+    line-height: 4em;
+    padding: 10px 20px;
+  }
+
+  .mobile-navbarBtn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: gray;
+    margin: 1vh 0;
+  }
+
+  #photo_nav_mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15vh;
+    font-size: 1.2em;
+  }
+
+  #photo_nav_mobile a:link, 
+  #photo_nav_mobile a:visited, 
+  #photo_nav_mobile a:link:hover, 
+  #photo_nav_mobile a:hover, 
+  #photo_nav_mobile a:visited:hover{
+    color: black;
+    text-decoration: none;
+  }
+
+  #blank_header{
+    height: 15vh;
+    width: 100vw;
+  }
+  /* End of Navigation Bar */
+
+  #foot{
+    position: absolute;
+    bottom: 0%;
+    margin: 5px;
+    font-size: .7em;
+    font-weight: 300;
+    color: white;
+  }
+}
+
+
