@@ -60,7 +60,7 @@ body{
   text-align: center;
   font-size: 1.3em;
 }
-#separator{
+.separator{
   width: 55vw;
   border: solid .5px black;
 }/* End of Navigation Bar */
@@ -270,8 +270,6 @@ body{
     height: 15vh;
     width: 100vw;
   }
-
-  #nav-separator1{ display: none; }
 
   .sub-topic, .sub-topic-single{
     flex-direction: column;

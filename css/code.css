@@ -213,9 +213,7 @@ body{
   .text{
     width: 80vw;
   }
-
-  #nav-separator1{ display: none; }
-
+  
   .app-img{
     display:none;
   }

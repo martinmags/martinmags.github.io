@@ -326,8 +326,6 @@ body{
     width: 100vw;
   }
 
-  #nav-separator1{ display: none; }
-
   .sub-topic, .sub-topic-single{
     flex-direction: column;
     justify-content: center;

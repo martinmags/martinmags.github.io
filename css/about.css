@@ -123,7 +123,7 @@ body{
 }
 
 /* Media Queries @max-width: 960*/
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px){  
   #content{ 
     justify-content: flex-start;
     height: 100vh;
@@ -193,6 +193,7 @@ body{
   #blank-header{
     height: 15vh;
     width: 100vw;
+    position: relative;
   }
   
   #aboutme{
