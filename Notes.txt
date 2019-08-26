@@ -6,6 +6,7 @@ TODO Tasks for Portfolio
   <meta http-equiv="Refresh" content="0; URL=noscripterror.html">
 </noscript>
 
+~ Install Ngrok to test live server on phone.
 ~ DESIGN:
   ~ Link "View Blog Entries" from Medium Blog
   ~ Write content then link "View Case Study" from Deuce

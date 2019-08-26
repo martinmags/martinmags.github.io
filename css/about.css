@@ -80,9 +80,6 @@ body{
 }
 
 #aboutme{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 40vw;
   height: auto;
   line-height: 150%;
