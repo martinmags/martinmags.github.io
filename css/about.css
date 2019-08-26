@@ -205,10 +205,14 @@ body{
     font-size: 2em;
     text-align: center;
   }
-  #self-portrait{
+  #self-portrait-container{
     height: auto;
-    width: 200px;
-    margin: 50vh 0;
+    width: 65vw;
+    margin: 10vh 0;
+  }
+  #self-portrait{
+    height: inherit;
+    width: inherit;
   }
   /* End of Navigation Bar */
 
