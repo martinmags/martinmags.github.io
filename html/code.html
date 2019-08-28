@@ -6,53 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Look into favicon.com to turn imgs to icons -->
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/code.css">
+  <link rel="stylesheet" href="/css/global.css">
   <script src="/js/mobile-nav.js"></script>
   <title>Martin Magsombol - Code</title>
 </head>
 <body id="page">
-  <!-- Navigation Bar (mobile)-->
-  <div id="mobile-navbar">
+  <!-- Navigation Bar -->
+  <div id="navbar">
     <div class="mobile-navbarBtn" onclick="toggleNB()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <ul>
-      <li>
-        <a id="logo_container" href="/index.html">
-          <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
-        </a>    
-      </li>
-      <li><a href="/html/code.html" class="emphasis">CODE</a></li>
-      <li><a href="/html/design.html">DESIGN</a></li>
-      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
-      <li><a href="/html/about.html">ABOUT</a></li>
-      <li><a href="#">VIEW MY RESUME</a></li>  
-    </ul>
-    <footer id="foot">
-      <p>Copyright &copy; Martin Mags</p>
-    </footer>
-  </div>
-    
-    <!-- Navigation Bar (desktop)-->
-    <div id="header">
-      <a id="logo_container" href="/index.html">
-        <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
+    <div id="nav">
+      <a id="logo-container" href="/index.html">
+        <img id ="logo" src="https://res.cloudinary.com/martinmags/image/upload/v1566945946/image%20assets/personal_logo_ermmg5.png" alt="mm_logo">
       </a>
-      <div id="nav_container">
+      <div id="nav-container">
         <a href="/html/code.html" class="emphasis">CODE</a>
-        <a href="/html/design.html" >DESIGN</a>
+        <a href="/html/design.html">DESIGN</a>
         <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
         <a href="/html/about.html">ABOUT</a>
       </div>
-      <div id="resume_container">
-        <a href="#">View my<br>Resume</a>
+      <div id="resume-container">
+        <a href="#">View my<br id="resume-break"> Resume</a>
       </div>
     </div>
-    <hr id="nav-separator1" class="separator">
-    <!-- End of Navigation Bar -->
+    <footer id="foot">
+        <p>Copyright &copy; Martin Mags</p>
+    </footer>
+  </div>
+  <hr id="nav-separator1" class="separator">
+  <!-- End of Navigation Bar-->
 
   <div id="content">
     <!-- XPosure -->
@@ -61,11 +49,9 @@
         <p class="role">Front-end Developer & Project Manager</p>
         <p class="app">XPosure</p><br>
         <p>Implemented the client-side presentation and user input with HTML, CSS, and JS of a competitive photography mobile platform.</p><br>
-        <button class="btn">
-          <a href="https://github.com/martinmags/cogs121-xposure" target="_blank">View Git Repo</a>
-        </button>
+        <a class="btn" href="https://github.com/martinmags/cogs121-xposure" target="_blank">View Git Repo</a>
       </div>
-      <div class="app-img"></div>
+      <img class="app-img" src="https://res.cloudinary.com/martinmags/image/upload/v1566977657/image%20assets/COGS121slide_eh2cux.png" alt="xposure app">
     </div>
 
     <!-- VennPool -->
@@ -73,14 +59,10 @@
       <div class="text">
         <p class="role">Co-Software Development Lead</p>
         <p class="app">VennPool</p><br>
-        <p>Implemented the client-side presentation and user input with HTML, CSS, and JS.</p><br>
-        <button class="btn">
-          <a href="/html/code/vennpool.html">View Developer Notes</a>
-        </button>
+        <p>Implemented the client-side presentation and user input with React-native and Redux of a Carpool/rideshare app.</p><br>
+        <a class="btn" href="/html/code/vennpool.html">View Developer Notes</a>
       </div>
-      <video class="app-img" controls autoplay loop>
-        <source src="/media/vennpool-demo.MP4">
-      </video>
+      <img class="app-img" src="https://res.cloudinary.com/martinmags/image/upload/v1566979472/image%20assets/vennpoolgraphic_uhjkyq.png" alt="vennpool app">
     </div>
 
     <!-- SwingGo -->
@@ -88,12 +70,10 @@
       <div class="text">
         <p class="role">Front-end Developer & Project Manager</p>
         <p class="app">SwingGo</p><br>
-        <p>Implemented the client-side presentation and user input with HTML, CSS, and JS.</p><br>
-        <button class="btn">
-          <a href="https://github.com/martinmags/swinggo-main" target="_blank">View Git Repo</a>
-        </button>
+        <p>Implemented the client-side presentation and user input with HTML, CSS, and JS of an app that aims to reduce learning barriers of golf.</p><br>
+        <a class="btn" href="https://github.com/martinmags/swinggo-main" target="_blank">View Git Repo</a>
       </div>
-      <div class="app-img"></div>
+      <img class="app-img" src="https://res.cloudinary.com/martinmags/image/upload/v1566979150/image%20assets/SwingGoSlide_fr0eja.jpg" alt="swinggo poster">
     </div>
 
     <!-- ChariTree -->
@@ -102,14 +82,10 @@
         <p class="role">Front-end Developer & Project Manager</p>
         <p class="app">ChariTree</p><br>
         <p>Implemented the client-side presentation and user input with HTML, CSS, and JS.</p><br>
-        <button class="btn">
-          <a href="https://github.com/Ajahks/ChariTree" target="_blank">View Git Repo</a>
-        </button>
+        <a class="btn" href="https://github.com/Ajahks/ChariTree" target="_blank">View Git Repo</a>
       </div>
-      <div class="app-img"></div>
+      <img class="app-img" src="https://res.cloudinary.com/martinmags/image/upload/v1566980407/image%20assets/charitree_y2hslv.png" alt="charitree">
     </div>
-
   </div>
-  
 </body>
 </html>

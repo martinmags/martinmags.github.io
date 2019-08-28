@@ -6,60 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Look into favicon.com to turn imgs to icons -->
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/about.css">
-  <script src="/js/mobile-nav.js"></script>
-  <title>Martin Magsombol - Design</title>
+  <link rel="stylesheet" href="/css/global.css">
+  
+  <script async src="/js/mobile-nav.js"></script>
+  <title>Martin Magsombol - About</title>
 </head>
+
 <body id="page">
   <!-- Navigation Bar (mobile)-->
-  <div id="mobile-navbar">
+  <div id="navbar">
     <div class="mobile-navbarBtn" onclick="toggleNB()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <ul>
-      <li>
-        <a id="logo_container" href="/index.html">
-          <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
-        </a>
-      </li>   
-      <li><a href="/html/code.html">CODE</a></li>
-      <li><a href="/html/design.html">DESIGN</a></li>
-      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
-      <li><a href="/html/about.html" class="emphasis">ABOUT</a></li>
-      <li><a href="#">VIEW MY RESUME</a></li>  
-    </ul>
-    <footer id="foot">
-      <p>Copyright &copy; Martin Mags</p>
-    </footer>
+    <div id="nav">
+      <a id="logo-container" href="/index.html">
+        <img id ="logo" src="https://res.cloudinary.com/martinmags/image/upload/v1566945946/image%20assets/personal_logo_ermmg5.png" alt="martinmags_logo">
+      </a>
+      <div id="nav-container">
+        <a href="/html/code.html">CODE</a>
+        <a href="/html/design.html">DESIGN</a>
+        <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
+        <a href="/html/about.html" class="emphasis">ABOUT</a>
+      </div>
+      <div id="resume-container">
+        <a href="#">View my<br id="resume-break"> Resume</a>
+      </div>
+      <footer id="foot">
+        <p>Copyright &copy; Martin Mags</p>
+      </footer>
+      </div>
   </div>
   
-  <!-- spacer for mobile -->
-  <!-- <div id="blank-header"></div> -->
   
-  <!-- Navigation Bar (desktop)-->
-  <div id="header">
-    <a id="logo_container" href="/index.html">
-      <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
-    </a>
-    <div id="nav_container">
-      <a href="/html/code.html">CODE</a>
-      <a href="/html/design.html">DESIGN</a>
-      <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
-      <a href="/html/about.html" class="emphasis">ABOUT</a>
-    </div>
-    <div id="resume_container">
-      <a href="#">View my<br>Resume</a>
-    </div>
-  </div>
   <hr id="nav-separator1" class="separator">
   <!-- End of Navigation Bar -->
 
   <div id="content">
     <div id="self-portrait-container">
-      <img id="self-portrait" src="/media/me2.JPG" alt="Martin Magsombol" title="Martin Magsombol">
+      <img id="self-portrait" src="https://res.cloudinary.com/martinmags/image/upload/v1566945662/image%20assets/me2_x7abbd.jpg" alt="Martin Magsombol" title="Martin Magsombol">
     </div>
     <div id="aboutme">
       <p id="title">Here's a little bit more about me.</p><br>
@@ -81,14 +70,14 @@
         if you have any opportunities or simply want to chat.
       </p>
       <div id="media">
-          <a class="media_container" href="">
-            <img class="media_icon" src="/media/gitIcon.png" alt="">
+          <a class="media_container" href="https://github.com/martinmags/" target="_blank">
+            <img class="media_icon" src="https://res.cloudinary.com/martinmags/image/upload/v1566945876/image%20assets/gitIcon_uzyrv4.png" alt="git icon">
           </a> 
-          <a class="media_container" href="">
-            <img class="media_icon" src="/media/linkedinIcon.png" alt="">
+          <a class="media_container" href="https://www.linkedin.com/in/martin-magsombol-415174100/" target="_blank">
+            <img class="media_icon" src="https://res.cloudinary.com/martinmags/image/upload/v1566945876/image%20assets/linkedinIcon_ppcv43.png" alt="linked icon">
           </a>
-          <a class="media_container" href="">
-            <img class="media_icon" src="/media/igIcon.png" alt="">
+          <a class="media_container" href="https://www.instagram.com/re.mags/" target="_blank">
+            <img class="media_icon" src="https://res.cloudinary.com/martinmags/image/upload/v1566945876/image%20assets/igIcon_invphx.png" alt="ig icon">
           </a>
       </div>
     </div>

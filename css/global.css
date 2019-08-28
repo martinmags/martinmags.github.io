@@ -1,0 +1,145 @@
+body{ 
+  font-family: 'Libre Caslon Text', serif;
+}
+#page{
+  font-weight: 300;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+/***** Desktop - Navigation Bar *****/
+#mobile-navbarBtn{ display: none;}
+#spacer{ height:2vh; }
+#logo{
+  height: 100px;
+  width: 100px;
+}
+/* 15vw */
+#logo-container{
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  justify-content: center;
+}
+#nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+}
+/* 70vw */
+#nav-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: inherit;
+  align-items: center;
+  font-size: 1.2em;
+}
+#nav a:link, 
+#nav a:visited, 
+#nav a:link:hover, 
+#nav a:hover, 
+#nav a:visited:hover{
+  color: black;
+  text-decoration: none;
+}
+/* 15vw */
+#resume-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 15vw;
+  text-align: center;
+  font-size: 1.3em;
+}
+.separator{
+  width: 55vw;
+  border: solid .5px black;
+}
+.emphasis{
+  color: #3098E7 !important;
+  font-weight: bold;
+}
+#foot{
+  position: fixed;
+  bottom: 0%;
+  padding: 3vh 1vw;
+  font-size: .7em;
+  font-weight: 300;
+  color: black;
+}
+
+/***** Small/Mobile - Navigation Bar *****/
+@media screen and (max-width: 960px){  
+  #content{ 
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+  }
+  #navbar{
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    left:-100vw;
+    background: rgb(41, 41, 41);
+    left: -75vw;
+    transition: all 250ms linear;
+  }
+  #logo-container, #nav-container, #resume-container{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+  }
+  #logo-container{ 
+    height: 20vh; 
+    width: auto;
+    padding-left: 7vw;
+  }
+  #resume-container{ 
+    padding-left: 10vw; 
+    text-transform: uppercase; 
+    width: auto;
+  }
+  #nav-container, #nav{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1em;
+    padding-left: 10vw;
+    height: 60vh;
+    width: auto;
+  }
+  .mobile-navbarBtn{
+    position: absolute;
+    left: 80vw;
+    top: 2vh;
+    color: black;
+  }
+  .mobile-navbarBtn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: gray;
+    margin: 1vh 0;
+  }
+  #navbar.active{ left: 0px; }
+  #navbar a:link, 
+  #navbar a:visited, 
+  #navbar a:link:hover, 
+  #navbar a:hover, 
+  #navbar a:visited:hover{
+    color: white;
+    text-decoration: none;
+  }
+  #foot{
+    bottom: 10%;
+    padding: 5vh 5vw;
+    color: white;
+  }
+  #nav-separator1{ display: none; }
+  #resume-break{ display: none; }
+}

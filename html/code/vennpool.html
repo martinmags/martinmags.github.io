@@ -6,57 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Look into favicon.com to turn imgs to icons -->
   <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/vennpool.css">
+  <link rel="stylesheet" href="/css/global.css">
   <script src="/js/mobile-nav.js"></script>
-  <title>Martin Magsombol - Code</title>
+  <title>MM - Code[vennpool] </title>
 </head>
+
 <body id="page">
-  <!-- Navigation Bar (mobile)-->
-  <div id="mobile-navbar">
+  <!-- Navigation Bar -->
+  <div id="navbar">
     <div class="mobile-navbarBtn" onclick="toggleNB()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <ul>
-      <li>
-        <a id="logo_container" href="/index.html">
-          <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
-        </a>
-      </li>
-      <li><a href="/html/code.html">CODE</a></li>
-      <li><a href="/html/design.html" class="emphasis">DESIGN</a></li>
-      <li><a href="/html/photography/portraits.html">PHOTOGRAPHY</a></li>
-      <li><a href="/html/about.html">ABOUT</a></li>
-      <li><a href="#">VIEW MY RESUME</a></li>  
-    </ul>
+    <div id="nav">
+      <a id="logo-container" href="/index.html">
+        <img id ="logo" src="https://res.cloudinary.com/martinmags/image/upload/v1566945946/image%20assets/personal_logo_ermmg5.png" alt="mm_logo">
+      </a>
+      <div id="nav-container">
+        <a href="/html/code.html">CODE</a>
+        <a href="/html/design.html">DESIGN</a>
+        <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
+        <a href="/html/about.html">ABOUT</a>
+      </div>
+      <div id="resume-container">
+        <a href="#">View my<br id="resume-break"> Resume</a>
+      </div>
+    </div>
     <footer id="foot">
-      <p>This website was written from scratch by me.</p>
-      <p>Copyright &copy; Martin Mags</p>
+        <p>Copyright &copy; Martin Mags</p>
     </footer>
   </div>
-  
-  <!-- spacer for mobile -->
-  <div id="blank-header"></div>
-
-  <!-- Navigation Bar (desktop)-->
-  <div id="header">
-    <a id="logo_container" href="/index.html">
-      <img id ="logo" src="/media/personal_logo.png" alt="mm_logo">
-    </a>
-    <div id="nav_container">
-      <a href="/html/code.html">CODE</a>
-      <a href="/html/design.html" class="emphasis">DESIGN</a>
-      <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
-      <a href="/html/about.html">ABOUT</a>
-    </div>
-    <div id="resume_container">
-      <a href="#">View my<br>Resume</a>
-    </div>
-  </div>
   <hr id="nav-separator1" class="separator">
-  <!-- End of Navigation Bar -->
+  <!-- End of Navigation Bar-->
 
   <div id="content">
     <!-- Role Skills/Tools Duration-->
@@ -76,8 +61,6 @@
     <hr class="separator">
     <!-- Overview-->
     <h1 id="overview-header">VennPool</h1>
-    <!-- link to design-->
-    
     <div id="inner-content">
       <p id="overview">
         VennPool is a mobile app that aims the alleviate messy communication associated with organizing large carpools.
@@ -85,13 +68,9 @@
         scalability to android os. It was my first time working with React Native, so I decided to create a Development
         journal to keep track of issues and solutions for reference.
       </p><br><br>
-      <button class="btn">
-        <a href="/html/design/vennpool-design.html">View Design Process</a>
-      </button><br><br>
+      <a class="btn" href="/html/design/vennpool-design.html">View Design Process</a><br><br>
       <!-- Developer Notes -->
       <iframe src="/documents/vennpool-journal.txt" id="developer-notes"></iframe><br>
-
-
     </div>
   </div>
   

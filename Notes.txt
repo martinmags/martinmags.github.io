@@ -6,15 +6,18 @@ TODO Tasks for Portfolio
   <meta http-equiv="Refresh" content="0; URL=noscripterror.html">
 </noscript>
 
-~ Install Ngrok to test live server on phone.
 ~ DESIGN:
   ~ Link "View Blog Entries" from Medium Blog
   ~ Write content then link "View Case Study" from Deuce
   ~ Write content then link "View Collection" from UX Flow Collection ( low priority )
   ~ Write content about the creation of this portfolio site ( low priority )
 
+~ Add resume link
+~ Add favicon
+~ Make sure all <title> are correct.
+~ Mini CSS
+
 ~ PHOTOGRAPHY:
-  ~ Do back-up loading just in case( low priority )
   ~ Curate and upload some images to Events
   ~ Curate and upload some images to Travel
 

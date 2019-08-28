@@ -1,7 +1,4 @@
 function toggleNB(){
-  const header = document.getElementById("mobile-navbar").classList.toggle('active');
+  const header = document.getElementById("navbar").classList.toggle('active');
   console.log("hi");
 }
-
-
-
