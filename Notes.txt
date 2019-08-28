@@ -16,7 +16,7 @@ TODO Tasks for Portfolio
 ~ Add favicon
 ~ Make sure all <title> are correct.
 ~ Mini CSS
-
+~ Look in to ssl w/ Cloudfare and further caching
 ~ PHOTOGRAPHY:
   ~ Curate and upload some images to Events
   ~ Curate and upload some images to Travel
