@@ -1,0 +1,42 @@
+body{ 
+  font-family: 'Libre Caslon Text', serif;
+}
+#page{
+  font-weight: 300;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+#logo{
+  height: 150px;
+  width: 150px;
+}
+/* 15vw */
+#logo-container{
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+  justify-content: center;
+}
+#content{
+  display: flex;
+  height: 88vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+#text{
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 90vw;
+  text-align: center;
+}
+#foot {
+  padding: 3vh 3vw;
+  font-size: .7em;
+  font-weight: 300;
+}
