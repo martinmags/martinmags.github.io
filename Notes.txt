@@ -7,14 +7,12 @@ TODO Tasks for Portfolio
 </noscript>
 
 ~ DESIGN:
-  ~ Link "View Blog Entries" from Medium Blog
   ~ Write content then link "View Case Study" from Deuce
   ~ Write content then link "View Collection" from UX Flow Collection ( low priority )
   ~ Write content about the creation of this portfolio site ( low priority )
 
 ~ Add resume link
 ~ Add favicon
-~ Make sure all <title> are correct.
 ~ Mini CSS
 ~ Look in to ssl w/ Cloudfare and further caching
 ~ PHOTOGRAPHY:

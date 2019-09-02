@@ -12,8 +12,8 @@ body{
 #mobile-navbarBtn{ display: none;}
 #spacer{ height:2vh; }
 #logo{
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 /* 15vw */
 #logo-container{
@@ -38,7 +38,7 @@ body{
   width: 100vw;
   height: inherit;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 #nav a:link, 
 #nav a:visited, 
@@ -55,32 +55,26 @@ body{
   justify-content: center;
   width: 15vw;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .separator{
   width: 55vw;
   border: solid .5px black;
 }
 .emphasis{
-  color: #3098E7 !important;
+  color: #008b8b !important;
   font-weight: bold;
 }
-#foot{
-  position: fixed;
-  bottom: 0%;
-  padding: 3vh 1vw;
+#nav-foot{ display: none; }
+#foot {
+  padding: 3vh 3vw;
   font-size: .7em;
   font-weight: 300;
-  color: black;
 }
+
 
 /***** Small/Mobile - Navigation Bar *****/
 @media screen and (max-width: 960px){  
-  #content{ 
-    justify-content: flex-start;
-    height: 100vh;
-    flex-direction: column;
-  }
   #navbar{
     position: fixed;
     width: 75vw;
@@ -89,6 +83,7 @@ body{
     background: rgb(41, 41, 41);
     left: -75vw;
     transition: all 250ms linear;
+    z-index: 2;
   }
   #logo-container, #nav-container, #resume-container{
     flex-direction: column;
@@ -135,11 +130,15 @@ body{
     color: white;
     text-decoration: none;
   }
-  #foot{
-    bottom: 10%;
-    padding: 5vh 5vw;
-    color: white;
-  }
   #nav-separator1{ display: none; }
   #resume-break{ display: none; }
+  #foot{ display: none; }
+  #nav-foot{
+    display: block;
+    padding: 20vh 0;
+    padding-left: 10vw;
+    font-size: .7em;
+    font-weight: 300;
+    color: white;
+  }
 }

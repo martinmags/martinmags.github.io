@@ -1,19 +1,14 @@
 /* 100-12 = 88vh */
 #content{
+  display: flex;
   height: 88vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-#intro_container{
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: center;
-  align-content: center;
-}
+
 #description_container{
   display: flex;
   flex-direction: column;
@@ -32,34 +27,24 @@
   margin-left: 15px;
 }
 #welcome{ font-size: 3em; }
-.emphasis{
-  color: #3098E7;
-  font-weight: bold;
-}
 
 /* Media Queries @max-width: 960*/
 @media screen and (max-width: 960px){
   #content{ 
-    justify-content: flex-start;
-    height: 100vh;
     flex-direction: column;
+    height: 100vh;
   }
   #aboutme{ width: 80vw; }
-  #intro_container{
-    flex-direction: column;
-    align-items: center;
+  #description_container{
+    justify-content: space-between;
     width: 65vw;
-    justify-content: space-evenly;
-    height: 100vh;
-  }
-  #welcome{ 
-    font-size: 2.5em; 
+    height: auto;
     margin-bottom: 3vh;
   }
+  #welcome{ font-size: 2.5em; }
   #me{
     margin-left: 0;
     height: auto;
     width: 50vw;
   }
-  #description_container{ height: auto; width: inherit; }
 }

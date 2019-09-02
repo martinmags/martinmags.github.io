@@ -18,6 +18,7 @@
   text-align: center;
   width: 275px;
   padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 /* Content */
 #role-skills-duration-container{
@@ -38,7 +39,7 @@
 #overview-header{
   display: flex;
   flex-direction: column;
-  color: #3098E7;
+  color: #008b8b;
   font-weight: bold;
   font-size: 2em;
   height: 10vh;
@@ -46,7 +47,7 @@
   justify-content: center;
 }
 .secondary-header{
-  color: #3098E7;
+  color: #008b8b;
   font-size: 1.5em;
   line-height: 2em;
   width: 55vw;
@@ -64,10 +65,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-}
-#developer-notes{
-  width: 40vw;
-  height: 40vh;
 }
 .demos{
   height: 400px;
@@ -107,7 +104,7 @@
   flex-wrap: wrap;
   width: 55vw;
 }
-
+#link-top{ display: none; }
 .list{ list-style-type: square; }
 
 /* Media Queries @max-width: 960*/
@@ -125,8 +122,9 @@
   }
   #content{ 
     display: block; 
-    height: 100vh;
-    overflow: scroll;
+    height: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   #overview, #content-header{ 
     width: 65vw;
@@ -150,5 +148,16 @@
     align-items: center;
     width: 100vw;
   }
+  #link-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    z-index: 3;
+    text-decoration: none;
+    color: #008b8b;
+    padding: 3vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
 }
-
