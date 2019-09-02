@@ -8,18 +8,12 @@ TODO Tasks for Portfolio
 
 ~ HIGH PRIORITY:
   ~ (DESIGN) Write content then link "View Case Study" from Deuce
-  ~ PHOTOGRAPHY:
-    ~ Curate and upload some images to Events
-    ~ Curate and upload some images to Travel
   ~ Add resume link
   ~ Add favicon
-  ~ Mini CSS
 
 ~ DESIGN:
   ~ Write content then link "View Collection" from UX Flow Collection ( low priority )
   ~ Write content about the creation of this portfolio site ( low priority )
-~ Look in to ssl w/ Cloudfare and further caching (low priority)
-
 
 --------------------------------------------------------------------
 Wow, I'm Learning

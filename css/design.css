@@ -6,14 +6,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  color: white;
+  color: black;
 }
 .work{
   display: flex;
   flex-direction: row;
   width: 90vw;
   justify-content: center;
-  background-color: #008b8b;
   margin-top: 8vh;
 }
 .text{
@@ -29,11 +28,11 @@
   font-weight: bold;
 }
 .btn{
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  border: white solid 1px;
+  border: black solid 1px;
   height: auto;
   width: 175px;
   padding: 2vh 2vw;
