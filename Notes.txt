@@ -8,8 +8,6 @@ TODO Tasks for Portfolio
 
 ~ HIGH PRIORITY:
   ~ (DESIGN) Write content then link "View Case Study" from Deuce
-  ~ Add resume link
-  ~ Add favicon
 
 ~ DESIGN:
   ~ Write content then link "View Collection" from UX Flow Collection ( low priority )

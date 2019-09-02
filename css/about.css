@@ -29,7 +29,6 @@
 #self-portrait{
   height: 550px;
   width: 350px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 #media{
   display: flex;
@@ -44,6 +43,7 @@
 .media_icon{
   height: inherit;
   width: inherit;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Media Queries @max-width: 960*/
