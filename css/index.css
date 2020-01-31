@@ -1,50 +1,74 @@
-/* 100-12 = 88vh */
-#content{
-  display: flex;
-  height: 88vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+p {
+  margin-bottom: 4vh;
 }
 
-#description_container{
+/* Work Content */
+#work-text {
+  margin-top: 10vh;
+  text-align: center;
+}
+#work-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 30px;
+}
+#work-container p {
+  text-align: center;
+  max-width: inherit;
+}
+
+/* About Content */
+#about-container {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
-  height: 30vh;
+  align-items: center;
+  justify-content: center;
 }
-#description{ 
-  font-size: 1.2em;
-  line-height: 125%;
-}
-#me{
-  height: 250px;
-  width: 250px;
-  border-radius: 100%;
-  margin-left: 15px;
-}
-#welcome{ font-size: 3em; }
 
-/* Media Queries @max-width: 960*/
-@media screen and (max-width: 960px){
-  #content{ 
-    flex-direction: column;
-    height: 100vh;
+#about-me-photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+#about-me-photo {
+  height: inherit;
+  width: inherit;
+}
+#about-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+/* Tablets md and larger */
+/* 
+  Desktop   (min-width: 1824px)
+  Laptop:   (max-width: 1024px)
+  Tablet:   (max-width: 768px)
+  Phone md: (max-width: 414px)
+  Phone sm: (max-width: 320px)
+*/
+@media (min-width: 768px) {
+  #about-container {
+    flex-direction: row;
+    height: 70vh;
   }
-  #aboutme{ width: 80vw; }
-  #description_container{
-    justify-content: space-between;
-    width: 65vw;
-    height: auto;
-    margin-bottom: 3vh;
-  }
-  #welcome{ font-size: 2.5em; }
-  #me{
-    margin-left: 0;
-    height: auto;
+  #about-me-photo-container {
+    justify-content: center;
+    height: inherit;
     width: 50vw;
+  }
+  #about-me-photo {
+    width: auto;
+  }
+  #about-me-bio {
+    width: 50vw;
+  }
+  .process-icon {
+    width: 128px;
   }
 }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Martin Magsombol - Portfolio</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#" style="height: 50px; width: 50px;">
+        <img src="/media/logo.svg" />
+      </a>
+      <a href="/#work-text">Work</a>
+      <a href="/#about-container">About</a>
+      <a>Resume</a>
+    </nav>
+
+    <div id="main-content">
+      <div id="landing-container">
+        <div id="flex-container">
+          <div id="work-info">
+            <h1 class="work-header">Vennpool</h1>
+            <p><span class="emphasis">Role: </span>UX Designer</p>
+            <p>
+              <span class="emphasis">Tools: </span>React-native, Redux, Figma,
+            </p>
+            <p><span class="emphasis">Duration: </span>7 months</p>
+            <p style="margin-top: 4vh;">
+              <span style="font-style: italic" class="emphasis">VennPool</span>
+              is a mobile app that aims the alleviate messy communication
+              associated with organizing large carpools.
+            </p>
+          </div>
+          <picture id="landing-img-container">
+            <source type="video/webp" src="/media/vennpool-demo.webp" />
+            <source type="video/mp4" src="/media/vennpool-demo.mp4" />
+          </picture>
+        </div>
+
+        <h2 style="margin: 2vh 0vw;">Process</h2>
+        <p>
+          For Vennpool, my focus was on
+          <span class="emphasis">mobile-app development</span> and
+          <span class="emphasis">ideation.</span>
+        </p>
+        <ul class="work-contribution">
+          <li>Implemented the frontend code on react-native</li>
+          <li>
+            Discussed and iterated on the information architectural design
+          </li>
+          <li>
+            Worked with mentors and investors as a part of the startup
+            incubator, The Basement
+          </li>
+        </ul>
+        <div id="process">
+          <img class="process-img" src="/media/research.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/ideate.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/feedback.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/redesign.svg" />
+        </div>
+        <hr class="separator" />
+
+        <h2>Research</h2>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;" class="emphasis">Personas</p>
+          <ul class="work-contribution">
+            <li>Outback Adventures member</li>
+            <li>Triton Gaming member</li>
+            <li>Working adult in an office job</li>
+          </ul>
+        </div>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;" class="emphasis">User Pain Points</p>
+          <ul class="work-contribution">
+            <li>Distraction</li>
+            <li>Repetitive Qs</li>
+            <li>Heavy Scrolling</li>
+            <li>Non-dynamic</li>
+          </ul>
+        </div>
+
+        <p>gif of Kimo's messages</p>
+
+        <hr class="separator" />
+
+        <h2>Ideation</h2>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;">
+            The architecture design was organized with the attempt on
+            controlling privilige access rights on group-restricted rides.
+          </p>
+          <ul>
+            <li>
+              Group(s)
+              <ul>
+                <li>
+                  Event(s)
+                  <ul>
+                    <li>Ride(s)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div style="margin-top: 2vh;" id="artifact-container">
+          <a
+            style="margin-right: 1vw;"
+            class="artifact-btn"
+            target="__blank"
+            href="/documents/vennpool-userstories.pdf"
+          >
+            <p>View User Stories</p>
+          </a>
+          <a
+            style="margin-right: 1vw;"
+            class="artifact-btn"
+            target="__blank"
+            href="/documents/vennpool-usecases.pdf"
+          >
+            <p>View Use Cases</p>
+          </a>
+        </div>
+        <hr class="separator" />
+
+        <h2>Feedback</h2>
+        <div class="process-piece">
+          <p>
+            After some <span class="emphasis">User Testing</span> and
+            <span class="emphasis">Design Critiques</span>, we discovered the
+            following:
+          </p>
+          <ul class="work-contribution">
+            <li>Many steps</li>
+            <li>Too confined</li>
+            <li>Complex</li>
+            <li>Wish to avoid account creation</li>
+            <li>Trusting a new app with personal info</li>
+          </ul>
+        </div>
+        <hr class="separator" />
+
+        <h2>Redesign</h2>
+        <div class="process-piece">
+          <p>
+            We replaced our account creation with Facebook's login api. Once
+            logged in, the user's "going" events are parsed into their feed, and
+            from there, they can view and offer rides. The initial design is
+            changed to ingrain the group concept yet effectively maintaining
+            rides within groups.
+          </p>
+          <ul class="work-contribution">
+            <li>Simplifies steps to sign-in and sign-up</li>
+            <li>Trust issue with a new app</li>
+            <li>
+              User account Control is interally managed by Facebook's
+              group/event system
+            </li>
+          </ul>
+        </div>
+
+        <hr class="separator" />
+
+        <h2 id="otherwork-text">Other Work</h2>
+        <div id="otherwork-container">
+          <div class="otherwork-item">
+            <a class="entry-btn" href="/pages/deuce.html">
+              <img src="/media/deuce.svg" alt="deuce-work-button" />
+            </a>
+            <p>UX Researcher</p>
+          </div>
+
+          <div class="otherwork-item">
+            <a class="entry-btn" href="/pages/d4sd.html">
+              <img src="/media/d4sd.svg" alt="d4sd-work-button" />
+            </a>
+            <p>Lead Software Engineer</p>
+          </div>
+        </div>
+        <!-- End of work-container -->
+      </div>
+    </div>
+  </body>
+</html>

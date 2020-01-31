@@ -1,0 +1,151 @@
+#landing-img {
+  width: 100%;
+  object-fit: cover;
+}
+#landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#flex-container {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  margin: 2vh 0vw;
+  align-items: center;
+}
+.work-header {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+#landing-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator {
+  width: 55vw;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: black;
+  margin: 4vh 0vw;
+}
+#process {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80vw;
+}
+.process-img {
+  width: 15vw;
+}
+.arrow {
+  width: 2vw;
+}
+.process-piece {
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  overflow-x: scroll;
+  align-items: center;
+}
+.redesign-process-piece {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  overflow-x: scroll;
+  align-items: center;
+}
+.demos {
+  /* margin: 2vh; */
+  border-radius: 35px;
+  max-width: 200px;
+}
+#figure-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+figcaption {
+  margin-bottom: 2vh;
+}
+.artifact-btn {
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 5px;
+}
+#artifact-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+}
+
+/* Work Content */
+#otherwork-text {
+  margin-top: 10vh;
+  text-align: center;
+}
+#otherwork-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+#otherwork-container p {
+  font-size: 0.75rem;
+  text-align: center;
+  max-width: inherit;
+}
+#demo {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deuce-design {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70vw;
+}
+.deuce-design img {
+  height: 300px;
+  border: 1px #384c6f solid;
+  margin-right: 2vw;
+}
+/* Laptop + */
+@media (min-width: 720px) {
+  #landing-img {
+    height: 40vh;
+  }
+  #landing-img-container {
+    width: 40vw;
+  }
+  .work-header {
+    text-align: left;
+  }
+  #flex-container {
+    justify-content: center;
+    flex-direction: row;
+    width: auto;
+    max-width: 800px;
+  }
+  #otherwork-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #process {
+    width: 50vw;
+  }
+  .process-piece,
+  .deuce-design {
+    width: auto;
+  }
+  .process-piece {
+    overflow-x: hidden;
+  }
+  .process-img {
+    width: 8vw;
+  }
+}

@@ -1,144 +1,181 @@
-body{ 
-  font-family: 'Libre Caslon Text', serif;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-#page{
-  font-weight: 300;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-/***** Desktop - Navigation Bar *****/
-#mobile-navbarBtn{ display: none;}
-#spacer{ height:2vh; }
-#logo{
-  height: 75px;
-  width: 75px;
+body {
+  line-height: 1;
 }
-/* 15vw */
-#logo-container{
-  display: flex;
-  flex-direction: row;
-  width: 15vw;
-  justify-content: center;
+ol,
+ul {
+  list-style: none;
 }
-#nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global */
+:root {
+  background-color: #f4f2ee;
+  /* Dark Mode: #121212 */
+  color: #384c6f;
+}
+ul,
+ol,
+li {
+  margin-block-start: 0;
+}
+a {
+  text-decoration: none;
+  color: #384c6f;
+}
+.emphasis {
+  font-weight: bolder;
+  color: #bf7b3d;
+}
+nav {
+  background-color: #d7dee0;
+  position: fixed;
   width: 100vw;
   height: 10vh;
-  align-items: center;
-}
-/* 70vw */
-#nav-container{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
-  height: inherit;
   align-items: center;
-  font-size: 1em;
 }
-#nav a:link, 
-#nav a:visited, 
-#nav a:link:hover, 
-#nav a:hover, 
-#nav a:visited:hover{
-  color: black;
-  text-decoration: none;
-}
-/* 15vw */
-#resume-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 15vw;
-  text-align: center;
-  font-size: 1em;
-}
-.separator{
-  width: 55vw;
-  border: solid .5px black;
-}
-.emphasis{
-  color: #008b8b !important;
-  font-weight: bold;
-}
-#nav-foot{ display: none; }
-#foot {
-  padding: 3vh 3vw;
-  font-size: .7em;
-  font-weight: 300;
+#main-content {
+  padding: 10vh 8vw 2vh 8vw;
+  overflow-y: hidden;
 }
 
+.entry-btn > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+h1,
+h2 {
+  margin: 2vh 0vw;
+}
+li {
+  list-style: disc;
+}
 
-/***** Small/Mobile - Navigation Bar *****/
-@media screen and (max-width: 960px){  
-  #navbar{
-    position: fixed;
-    width: 75vw;
-    height: 100vh;
-    left:-100vw;
-    background: rgb(41, 41, 41);
-    left: -75vw;
-    transition: all 250ms linear;
-    z-index: 2;
-  }
-  #logo-container, #nav-container, #resume-container{
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1em;
-  }
-  #logo-container{ 
-    height: 20vh; 
-    width: auto;
-    padding-left: 7vw;
-  }
-  #resume-container{ 
-    padding-left: 10vw; 
-    text-transform: uppercase; 
-    width: auto;
-  }
-  #nav-container, #nav{
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1em;
-    padding-left: 10vw;
-    height: 60vh;
-    width: auto;
-  }
-  .mobile-navbarBtn{
-    position: absolute;
-    left: 80vw;
-    top: 2vh;
-    color: black;
-  }
-  .mobile-navbarBtn span{
-    display: block;
-    width: 30px;
-    height: 5px;
-    background: gray;
-    margin: 1vh 0;
-  }
-  #navbar.active{ left: 0px; }
-  #navbar a:link, 
-  #navbar a:visited, 
-  #navbar a:link:hover, 
-  #navbar a:hover, 
-  #navbar a:visited:hover{
-    color: white;
-    text-decoration: none;
-  }
-  #nav-separator1{ display: none; }
-  #resume-break{ display: none; }
-  #foot{ display: none; }
-  #nav-foot{
-    display: block;
-    padding: 20vh 0;
-    padding-left: 10vw;
-    font-size: .7em;
-    font-weight: 300;
-    color: white;
+/* Phone SM*/
+@media (min-width: 320px) and (max-width: 413px) {
+  #main-content {
+    padding: 10vh 0vw 2vh 0vw;
   }
 }

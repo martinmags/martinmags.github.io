@@ -1,0 +1,44 @@
+/* ADAPTIVE FONTS */
+/* 
+  Desktop   (min-width: 1824px)
+  Laptop:   (min-width: 1024px) and (min-width: 1823px)
+  Tablet:   (min-width: 768px) and (max-width: 1023px)
+  Phone md: (min-width: 414px) and (max-width: 767px)
+  Phone sm: (min-width: 320px) and (max-width: 413px)
+*/
+:root {
+  font-size: 18px;
+  font-family: "Libre Caslon Text", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p,
+li,
+a,
+figcaption {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  max-width: 50ch;
+}
+
+/* Phone SM*/
+@media (min-width: 320px) and (max-width: 413px) {
+  p,
+  li,
+  a,
+  figcaption {
+    max-width: 30ch;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}

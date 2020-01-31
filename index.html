@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Look into favicon.com to turn imgs to icons -->
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/> -->
-  <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/global.css">
-  <!-- Favicon-->
-  <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/media/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Mobile nav bar -->
-  <script src="/js/mobile-nav.js"></script>
-  <title>Martin Magsombol - Portfolio</title>
-</head>
-<body id="page">
-  <!-- Navigation Bar -->
-  <div id="navbar">
-    <div class="mobile-navbarBtn" onclick="toggleNB()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div id="nav">
-      <a id="logo-container" href="/index.html">
-        <img id ="logo" src="https://res.cloudinary.com/martinmags/image/upload/v1566945946/image%20assets/personal_logo_ermmg5.png" alt="mm_logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Martin Magsombol - Portfolio</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#" style="height: 50px; width: 50px;">
+        <img src="/media/logo.svg" />
       </a>
-      <div id="nav-container">
-        <a href="/html/code.html">CODE</a>
-        <a href="/html/design.html">DESIGN</a>
-        <a href="/html/photography/portraits.html">PHOTOGRAPHY</a>
-        <a href="/html/about.html">ABOUT</a>
-      </div>
-      <div id="resume-container">
-        <a href="/documents/8.19.19-Generic-CV-Resume.pdf" target="_blank">View my<br id="resume-break"> Resume</a>
-      </div>
-    </div>
-  </div>
-  <hr id="nav-separator1" class="separator">
-  <!-- End of Navigation Bar-->
+      <a href="/#work-text">Work</a>
+      <a href="/#about-container">About</a>
+      <a>Resume</a>
+    </nav>
 
-  <div id="content">
-    <div id="description_container">
-      <p id="welcome">
-        Hello! <br>
-        My name is <span class="emphasis">Martin</span>.
-      </p><br> 
-      <p id="description">I'm a <span class="emphasis">UX Architect</span> that aims to provide a scalable
-        end-product and seamless user experience.
-      </p>
+    <div id="main-content">
+      <div id="landing-container"></div>
+
+      <h2 id="work-text">WORK</h2>
+      <div id="work-container">
+        <div class="work-item">
+          <a class="entry-btn" href="/pages/d4sd.html">
+            <img src="/media/d4sd.svg" alt="d4sd-work-button" />
+          </a>
+          <p>Lead Software Engineer</p>
+        </div>
+
+        <div class="work-item">
+          <a class="entry-btn" href="/pages/vennpool.html">
+            <img src="/media/vennpool.svg" alt="vennpool-work-button" />
+          </a>
+          <p>UX Designer</p>
+        </div>
+
+        <div class="work-item">
+          <a class="entry-btn" href="/pages/deuce.html">
+            <img src="/media/deuce.svg" alt="deuce-work-button" />
+          </a>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <!-- End of work-container -->
+
+      <div id="about-container">
+        <div id="about-me-photo-container">
+          <img
+            id="about-me-photo"
+            src="https://res.cloudinary.com/martinmags/image/upload/q_20/v1579735221/image%20assets/about-me2.jpg"
+            alt="martinmags-about-photo"
+          />
+        </div>
+        <div id="about-bio">
+          <p>
+            I've had the pleasure of working as a Front-end Engineer, Designer,
+            and Project Manager during my years as an Undergraduate. I'm open to
+            exploring other Software Engineering roles.
+          </p>
+          <p>
+            I'm based in Northern California, "an hour from San Francisco." On
+            the side, I love to shoot portraitures, read webtoons, and play
+            video games.
+          </p>
+          <p>
+            Contact me at
+            <span class="emphasis">martinremags@gmail.com</span> if you have any
+            opportunities or simply want to chat.
+          </p>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact"></div>
+      </div>
     </div>
-    <img id="me" src="https://res.cloudinary.com/martinmags/image/upload/v1566945946/image%20assets/me_rk2quo.jpg" alt="martin_mags" title="Please Hire Me">
-  </div>
-  <footer id="foot">
-    <p>Copyright &copy; Martin Mags</p>
-  </footer>
-</body>
+  </body>
 </html>

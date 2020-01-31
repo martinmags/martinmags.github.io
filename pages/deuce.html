@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Martin Magsombol - Portfolio</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#" style="height: 50px; width: 50px;">
+        <img src="/media/logo.svg" />
+      </a>
+      <a href="/#work-text">Work</a>
+      <a href="/#about-container">About</a>
+      <a>Resume</a>
+    </nav>
+
+    <div id="main-content">
+      <div id="landing-container">
+        <div id="flex-container">
+          <div id="work-info">
+            <h1 class="work-header">Deuce</h1>
+            <p><span class="emphasis">Role: </span>UX Researcher</p>
+            <p>
+              <span class="emphasis">Tools: </span>Figma, Google Suite, Slack
+            </p>
+            <p><span class="emphasis">Duration: </span> 5 weeks</p>
+            <p style="margin-top: 4vh;">
+              <span class="emphasis" style="font-style: italic;">Deuce </span
+              >aims to guide travelers to their ideal public restrooms in
+              familiar and unfamiliar locations
+            </p>
+          </div>
+          <!-- href="https://www.figma.com/proto/uavu2ggBLICbwJRhzHxBQp/Deuce?node-id=80%3A340&viewport=288%2C-2893%2C0.46933579444885254&scaling=scale-down" -->
+          <div id="landing-img-container">
+            <video autoplay loop class="demos" style="border-radius: 35px;">
+              <source type="video/mp4" src="/media/deuce-demo.mp4" />
+              <source type="video/webm" src="/media/deuce-demo.webm" />
+            </video>
+          </div>
+        </div>
+
+        <h2 style="margin: 4vh 0vw;">Process</h2>
+        <div class="process-piece">
+          <p>
+            For Deuce, my focus was on
+            <span class="emphasis">project management</span> and
+            <span class="emphasis">research.</span>
+          </p>
+          <ul class="work-contribution">
+            <li>Organizing scrum style production on Slack</li>
+            <li>
+              Made crucial design decisions that focused on minimal but
+              meaningful user interactions
+            </li>
+            <li>
+              Competitive analysis chart comparing top competitors, Toiler
+              Finder and Flush
+            </li>
+          </ul>
+        </div>
+
+        <div id="process">
+          <img class="process-img" src="/media/research.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/ideate.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/feedback.svg" />
+          <img class="arrow" src="/media/arrow.svg" />
+          <img class="process-img" src="/media/redesign.svg" />
+        </div>
+        <hr class="separator" />
+
+        <h2>Research</h2>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;" class="emphasis">Personas</p>
+          <ul class="work-contribution">
+            <li>Mothers</li>
+            <li>Frequent Travelers</li>
+            <li>Travelers with accessibility needs</li>
+          </ul>
+        </div>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;" class="emphasis">Competitor Analysis</p>
+          <p>
+            Deuce was compared to Toilet Finder and Flush; it has the following
+            features:
+          </p>
+          <ul class="work-contribution">
+            <li>
+              <span class="emphasis">Traffic indicator </span> of a restroom's
+              current user flow.
+            </li>
+            <li>
+              <span class="emphasis">Wider range of amenity markers</span> than
+              both Toilet Finder and Flush.
+            </li>
+            <li>
+              <span class="emphasis">Verification system</span> on crowdsourced
+              restrooms which enabled the ability to detect and block off
+              residential areas.
+            </li>
+          </ul>
+        </div>
+        <hr class="separator" />
+
+        <h2>Ideation</h2>
+        <div style="width: 100vw;" class="process-piece">
+          <div class="deuce-design">
+            <!-- Initial Mapview -->
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="/media/deuce-initial-mapview.webp"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1024px)"
+                srcset="/media/deuce-initial-mapview-md.png"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 320px) and (max-width: 1023px)"
+                srcset="/media/deuce-initial-mapview-sm.png"
+              />
+              <img
+                src="/media/deuce-initial-mapview-md.png"
+                alt="deuce-initial-mapview"
+              />
+            </picture>
+
+            <!-- Initial Toiletpage -->
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="/media/deuce-initial-toiletpage.webp"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1024px)"
+                srcset="/media/deuce-initial-toiletpage-md.png"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 320px) and (max-width: 1023px)"
+                srcset="/media/deuce-initial-toiletpage-sm.png"
+              />
+              <img
+                src="/media/deuce-initial-toiletpage-md.png"
+                alt="deuce-initial-toiletpage"
+              />
+            </picture>
+
+            <!-- Initial Review -->
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="/media/deuce-initial-review.webp"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1024px)"
+                srcset="/media/deuce-initial-review-md.png"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 320px) and (max-width: 1023px)"
+                srcset="/media/deuce-initial-review-sm.png"
+              />
+              <img
+                src="/media/deuce-initial-review-md.png"
+                alt="deuce-initial-review"
+              />
+            </picture>
+
+            <!-- Initial Postreview -->
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="/media/deuce-initial-postreview.webp"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1024px)"
+                srcset="/media/deuce-initial-postreview-md.png"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 320px) and (max-width: 1023px)"
+                srcset="/media/deuce-initial-postreview-sm.png"
+              />
+              <img
+                src="/media/deuce-initial-postreview-md.png"
+                alt="deuce-initial-toiletpage"
+              />
+            </picture>
+          </div>
+        </div>
+        <hr class="separator" />
+        <h2>Feedback</h2>
+        <div class="process-piece">
+          <p style="margin-top: 2vh;" class="emphasis">
+            User Testing & Data Analysis
+          </p>
+          <ul class="work-contribution">
+            <li>15 out of 15 found their location</li>
+            <li>15 out of 15 found the features at Shores Beach</li>
+            <li>
+              11 out of 15 were able to place a review at Mt. Catlin Hotel
+            </li>
+            <li>
+              Other notable pain points:
+              <ul>
+                <li>Call button at the list view page</li>
+                <li>X button</li>
+                <li>Excessive clicking</li>
+                <li>Dark map</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div style="margin-top: 2vh;" id="artifact-container">
+          <a
+            style="margin-right: 1vw;"
+            class="artifact-btn"
+            target="__blank"
+            href="https://forms.gle/6YRKocTftZCXb6AK7"
+          >
+            <p>View Interview Questions</p>
+          </a>
+        </div>
+        <p style="font-size: .5rem;">Written by my colleage, Vivian T.</p>
+
+        <hr class="separator" />
+
+        <h2>Redesign</h2>
+        <div class="redesign-process-piece">
+          <ul class="work-contribution">
+            <li>Included reviews in toiletpage</li>
+            <li>Added a report page</li>
+            <li>Changed colors to be mor visible</li>
+            <li>Changed phone button in list view</li>
+          </ul>
+          <div class="redesign-process-piece">
+            <p class="emphasis">Initial Design</p>
+            <div class="deuce-design">
+              <!-- Initial Mapview -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-initial-mapview.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-initial-mapview-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-initial-mapview-sm.png"
+                />
+                <img
+                  src="/media/deuce-initial-mapview-md.png"
+                  alt="deuce-initial-mapview"
+                />
+              </picture>
+
+              <!-- Initial Toiletpage -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-initial-toiletpage.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-initial-toiletpage-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-initial-toiletpage-sm.png"
+                />
+                <img
+                  src="/media/deuce-initial-toiletpage-md.png"
+                  alt="deuce-initial-toiletpage"
+                />
+              </picture>
+
+              <!-- Initial Toiletpage -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-initial-review.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-initial-review-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-initial-review-sm.png"
+                />
+                <img
+                  src="/media/deuce-initial-review-md.png"
+                  alt="deuce-initial-review"
+                />
+              </picture>
+
+              <!-- Initial Postreview -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-initial-postreview.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-initial-postreview-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-initial-postreview-sm.png"
+                />
+                <img
+                  src="/media/deuce-initial-postreview-md.png"
+                  alt="deuce-initial-postreview"
+                />
+              </picture>
+            </div>
+
+            <p style="margin-top: 2vh;" class="emphasis">
+              Post-Feedback Design
+            </p>
+            <div class="deuce-design">
+              <!-- Mapview -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-mapview.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-mapview-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-mapview-sm.png"
+                />
+                <img src="/media/deuce-mapview-md.png" alt="deuce-mapview" />
+              </picture>
+
+              <!-- Toiletpage -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-toiletpage.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-toiletpage-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-toiletpage-sm.png"
+                />
+                <img
+                  src="/media/deuce-toiletpage-md.png"
+                  alt="deuce-toiletpage"
+                />
+              </picture>
+
+              <!-- Postreview -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-postreview.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-postreview-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-postreview-sm.png"
+                />
+                <img
+                  src="/media/deuce-postreview-md.png"
+                  alt="deuce-postreview"
+                />
+              </picture>
+              <!-- Postreview -->
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="/media/deuce-report.webp"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 1024px)"
+                  srcset="/media/deuce-report-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 1023px)"
+                  srcset="/media/deuce-report-sm.png"
+                />
+                <img src="/media/deuce-report-md.png" alt="deuce-report" />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr class="separator" />
+
+        <h2 id="otherwork-text">Other Work</h2>
+        <div id="otherwork-container">
+          <div class="otherwork-item">
+            <a class="entry-btn" href="/pages/d4sd.html">
+              <img src="/media/d4sd.svg" alt="d4sd-work-button" />
+            </a>
+            <p>Lead Software Engineer</p>
+          </div>
+
+          <div class="otherwork-item">
+            <a class="entry-btn" href="/pages/vennpool.html">
+              <img src="/media/vennpool.svg" alt="vennpool-work-button" />
+            </a>
+            <p>UX Designer</p>
+          </div>
+        </div>
+        <!-- End of work-container -->
+      </div>
+    </div>
+  </body>
+</html>
