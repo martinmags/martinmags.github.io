@@ -18,10 +18,11 @@
   text-align: center;
   margin-bottom: 2vh;
 }
-#landing-img-container {
+.landing-img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 200px;
 }
 .separator {
   width: 55vw;
@@ -58,8 +59,6 @@
 }
 .demos {
   /* margin: 2vh; */
-  border-radius: 35px;
-  max-width: 200px;
 }
 #figure-demo {
   display: flex;
@@ -98,6 +97,9 @@ figcaption {
   text-align: center;
   max-width: inherit;
 }
+.otherwork-item {
+  width: 320px;
+}
 #demo {
   width: 70vw;
   display: flex;
@@ -120,7 +122,7 @@ figcaption {
   #landing-img {
     height: 40vh;
   }
-  #landing-img-container {
+  .landing-img-container {
     width: 40vw;
   }
   .work-header {
