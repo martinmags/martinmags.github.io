@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/pages.css" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text&amp;display=swap"
       rel="stylesheet"
@@ -51,13 +52,23 @@
               </li>
             </ul>
           </div>
-          <a
-            class="landing-img-container"
-            target="__blank"
-            href="https://d4sd.org"
-          >
-            <img id="landing-img" src="/media/d4sd.png" />
-          </a>
+          <div class="landing-img-container">
+            <a href="https://d4sd.org" target="__blank">
+              <picture id="landing-img">
+                <source
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  srcset="/media/d4sd-md.png"
+                />
+                <source
+                  type="image/png"
+                  media="(min-width: 320px) and (max-width: 767px)"
+                  srcset="/media/d4sd-sm.png"
+                />
+                <img src="/media/d4sd-md.png" alt="d4sd" />
+              </picture>
+            </a>
+          </div>
         </div>
 
         <hr class="separator" />

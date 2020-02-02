@@ -1,6 +1,8 @@
 #landing-img {
-  width: 100%;
-  object-fit: cover;
+  width: 300px;
+}
+#landing-img img {
+  width: inherit;
 }
 #landing-container {
   display: flex;
@@ -22,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 200px;
+  max-width: 300px;
 }
 .separator {
   width: 55vw;
@@ -117,6 +119,7 @@ figcaption {
   border: 1px #384c6f solid;
   margin-right: 2vw;
 }
+
 /* Laptop + */
 @media (min-width: 720px) {
   #landing-img {
@@ -149,5 +152,8 @@ figcaption {
   }
   .process-img {
     width: 8vw;
+  }
+  #work-info {
+    margin-right: 10vw;
   }
 }
