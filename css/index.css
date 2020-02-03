@@ -31,6 +31,11 @@ p {
 #landing-container {
   height: 100vh;
   width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/media/landing.svg");
 }
 /* Work Content */
 #work-text {
@@ -65,7 +70,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 4vh;
 }
 
 /* Tablets md and larger */
