@@ -61,18 +61,29 @@
         </div>
       </div>
       <!-- End of work-container -->
-
       <div id="about-container">
         <div id="about-me-photo-container">
           <picture>
-            <img
-              id="about-me-photo"
-              src="/media/about-me-sm.jpg"
-              alt="martinmags-about-photo"
+            <source
+              type="image/jpg"
+              media="(min-width: 1024px)"
+              srcset="/media/about-me-lg.jpg"
             />
+            <source
+              type="image/jpg"
+              media="(min-width: 768px) and (max-width: 1023px)"
+              srcset="/media/about-me-md.jpg"
+            />
+            <source
+              type="image/jpg"
+              media="(min-width: 320px) and (max-width: 767px)"
+              srcset="/media/about-me-sm.jpg"
+            />
+            <img src="/media/about-me-md.jpg" alt="martinmags-about-photo" />
           </picture>
         </div>
         <div id="about-bio">
+          <h2 style="text-align: left;" id="work-text">About Me</h2>
           <p>
             I've had the pleasure of working as a Front-end Engineer, Designer,
             and Project Manager during my years as an Undergraduate. I'm open to

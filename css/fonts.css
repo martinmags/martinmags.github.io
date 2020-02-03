@@ -31,7 +31,7 @@ li {
 }
 
 /* Phone SM*/
-@media (min-width: 320px) and (max-width: 413px) {
+@media (min-width: 320px) and (max-width: 1823px) {
   p,
   li,
   a,
