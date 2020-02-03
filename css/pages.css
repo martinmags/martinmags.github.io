@@ -30,7 +30,8 @@
   width: 55vw;
   border-width: 0.5px;
   border-style: solid;
-  border-color: black;
+  border-color: white;
+  opacity: 0.6;
   margin: 4vh 0vw;
 }
 #process {

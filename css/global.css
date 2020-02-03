@@ -128,9 +128,8 @@ table {
 
 /* Global */
 :root {
-  background-color: #f4f2ee;
-  /* Dark Mode: #121212 */
-  color: #384c6f;
+  background-color: #121212;
+  color: #ffffff;
 }
 ul,
 ol,
@@ -139,14 +138,16 @@ li {
 }
 a {
   text-decoration: none;
-  color: #384c6f;
+  color: #ffffff;
+  opacity: 0.87;
 }
 .emphasis {
   font-weight: bolder;
-  color: #bf7b3d;
+  color: #f6973e;
+  opacity: 0.87;
 }
 nav {
-  background-color: #d7dee0;
+  background-color: #232323;
   position: fixed;
   width: 100vw;
   height: 10vh;
@@ -154,6 +155,7 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
 }
 #main-content {
   padding: 10vh 8vw 2vh 8vw;
