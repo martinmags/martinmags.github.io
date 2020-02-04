@@ -174,6 +174,11 @@ h2 {
 li {
   list-style: disc;
 }
+#foot {
+  padding: 3vh 3vw;
+  font-size: 0.7em;
+  font-weight: 300;
+}
 
 /* Phone SM*/
 @media (min-width: 320px) and (max-width: 413px) {
