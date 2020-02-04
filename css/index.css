@@ -97,19 +97,4 @@ p {
   #about-bio {
     width: 40vw;
   }
-  .process-icon {
-    width: 128px;
-  }
-  #landing-container {
-    height: 100vh;
-    width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/media/landing.svg");
-  }
-  #landing-me {
-    display: none;
-  }
 }
