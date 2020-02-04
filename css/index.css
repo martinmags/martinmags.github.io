@@ -92,6 +92,6 @@ p {
     margin-right: 10px;
   }
   #about-bio {
-    width: 40vw;
+    /* width: 40vw; */
   }
 }
