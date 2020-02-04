@@ -179,6 +179,9 @@ li {
   font-size: 0.7em;
   font-weight: 300;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* Phone SM*/
 @media (min-width: 320px) and (max-width: 413px) {
