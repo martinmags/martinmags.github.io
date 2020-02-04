@@ -58,6 +58,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 40vw;
 }
 
 /* Tablets md and larger */
