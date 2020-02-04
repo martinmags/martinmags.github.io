@@ -126,6 +126,10 @@ figcaption {
   #landing-img {
     height: 40vh;
   }
+  #landing-container,
+  .redesign-process-piece {
+    overflow-x: hidden;
+  }
   .landing-img-container {
     width: 40vw;
   }
